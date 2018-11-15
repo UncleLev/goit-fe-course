@@ -3,14 +3,11 @@
 	margin: 0px;
 	color: #626262;
 	padding: 0px;
-	font-family: 'Playfair Display', serif;s
+	font-family: 'Playfair Display', serif;
 		
 }
 
-body
-{
-	
-}
+
 	
 /*#03a9f4 */
 li
@@ -18,11 +15,16 @@ li
 	display: inline-block;
 	margin:  0px 50px 0px 50px;
 }
+button:hover
+{
+	color: #03a9f4;
+}
 .menu
 {
 	margin: 80px auto 25px auto;
 	padding: 0;
-	width: 780px;;
+	width: 780px;
+	font-style: normal;
 	
 }
 img{
