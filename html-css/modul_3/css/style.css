@@ -7,21 +7,33 @@
 	
 }
 
-
+body
+{
+	margin-top: 75px;
+}
 
 
 .menu
 {
-	margin: 80px auto 25px auto;
+	margin: 0px auto 25px auto;
 	padding: 0;
-	width: 780px;
+	width: 820px;
 	font-style: normal;
 }
 li
 {
 	display: inline-block;
-	margin:  0px 50px 0px 50px;
+	width: 200px;
+	/* margin:  0px 0px 0px 0px; */
+	text-align: center;
+
 }
+.upperteat
+{
+	text-transform: uppercase;
+}
+
+
 a:hover
 {
 	color: #03a9f4;
@@ -30,6 +42,7 @@ a
 {
 	outline: none;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 img{
 	width: 420px;
