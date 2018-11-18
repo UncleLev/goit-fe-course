@@ -7,14 +7,12 @@
 	
 }
 
-body
-{
-	margin-top: 75px;
-}
+
 
 header
 {
-	margin-bottom: 25px;
+	padding-top: 75px; 
+	margin-bottom: 100px;
 }
 
 .menu
@@ -30,7 +28,7 @@ li
 	text-align: center;
 
 }
-.upperteat
+#uppertext_using 
 {
 	text-transform: uppercase;
 }
@@ -53,20 +51,35 @@ img{
 
 p{
 	margin-top: 30px;
+	width: 420px;
 }
-h2{
+h2
+{
 	margin-top: 30px; 
 }
-.text{
-	width: 970px;
-	margin: 0px auto;	
+main
+{
+	display: block;
+	width: 1030px;
+	margin: 0px auto;
 }
 section
 {
+	
 	display: inline-block;
-	width: 420px;
-	margin: 75px 30px 75px 30px;
+	width: 970px;
+	padding-left: 60px;
+	margin: 0px auto;
 }
+
+.coloms_block
+{
+	display: inline-block;
+	width: 480px;
+	height: 600px;
+	/* text-align: center; */
+}
+
 
 
 button:hover
