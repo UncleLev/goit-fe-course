@@ -43,6 +43,7 @@ a
 	outline: none;
 	text-decoration: none;
 	text-transform: uppercase;
+	font-size: 14px;
 }
 img{
 	width: 420px;
@@ -52,30 +53,39 @@ img{
 p{
 	margin-top: 30px;
 	width: 420px;
+	font-size: 14px;
 }
 h2
 {
-	margin-top: 30px; 
+	margin-top: 30px;
+	font-size: 30px; 
 }
 main
 {
 	display: block;
-	width: 1030px;
+	width: 904px;
 	margin: 0px auto;
 }
 section
 {
 	
 	display: inline-block;
-	width: 970px;
-	padding-left: 60px;
+	width: 904px;
+	/* padding-left: 60px; */
+	margin: 0px auto;
 }
 
 .coloms_block
 {
 	display: inline-block;
-	width: 480px;
+	width: 420px;
 	height: 600px;
+	margin-right:60px;
+	font-size: 0px; 
+}
+.coloms_block:last-child
+{
+	margin-right: 0px
 }
 
 
@@ -100,5 +110,5 @@ button
 	width: 165px;
 	height: 60px;
 	border: 1px solid #626262;
-	font-size: 16px;
+	font-size: 20px;
 }

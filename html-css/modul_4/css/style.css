@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+    color: #515151;  
+}
+.clearfix::after
+{
+    display: table;
+    content: '';
+    clear: both;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+header{
+    padding-top: 40px;
+    padding-bottom: 104px;
+    margin: 0px auto;
+    width: 1110px;
+    
+    
+}
+#logotipe
+{
+    text-align: left;
+    text-transform: uppercase;
+    /* float: left; */
+    font-size: 20px;
+    width: 80px;
+    float: left;
+    color: #b7b2b2;
+}
+#logotipe::first-letter
+{
+    color: #1abc9c;
+    font-weight: bold;  
+
+}
+
+.site-navigation
+{
+    width: 490px;
+    float: right;
+    margin-top: 6px;
+}
+a:hover
+{
+    color: #baebe1;
+}
+.site-navigation li{
+    float: left;
+    text-transform: uppercase;
+    font-size: 10px;
+    /* width: 80px; */
+    list-style: none;
+    /* margin-right: 30px;    */
+}
+
+
+
+a{
+    text-decoration: none; 
+    font-weight: bold;
+    color: #b7b2b2;
+    padding: 0px 15px; 
+     
+}
+
+/* 255 320 
+Uncle Lev, [21.11.18 20:49]
+e9f0fd
+
+Uncle Lev, [21.11.18 20:49]
+1abc9c
+
+Uncle Lev, [21.11.18 20:49]
+7fd9c7
+
+Uncle Lev, [21.11.18 20:50]
+555252*/
+
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: bold;  
+    margin: 92px;
+}
+h2::after
+{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 160px;
+    background-color: #1abc9c;
+    margin: 32px auto 0 auto;
+    
+}
+.gallery-item
+{
+    list-style: none;
+    height: 320px;
+    width: 255px;
+    float: left;
+    padding-bottom: 30px;
+    padding-left: 15px;
+}
+
+.gallery-item p
+{
+    color: #ffffff;
+    text-transform: uppercase;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+        
+}
+.name-item
+{
+    height: 40px;
+    width: 200px;
+    background-color: #323232;
+}
+.prise-item
+{
+    /* 40 200 */
+    height: 40px;
+    width: 55px;
+    background-color: #8c8c8c;
+}
+.prise-item::before
+{
+    content: '$';
+}
+main
+{
+    width: 1110px;
+    margin: 0px auto;
+}
+.container
+{
+    width: 1110px;
+}
+img{
+    background-color: #e9f0fd;
+    height: 280px;
+    width: 255px;
+}
+
+
