@@ -16,7 +16,7 @@ body{
 
 header{
     padding-top: 40px;
-    padding-bottom: 104px;
+    padding-bottom: 35px;
     margin: 0px auto;
     width: 1110px;
     
@@ -82,14 +82,15 @@ Uncle Lev, [21.11.18 20:50]
 555252*/
 
 
-h2{
+.h2featur ,.h2news{
     text-align: center;
     text-transform: uppercase;
     font-size: 34px;
     font-weight: bold;  
-    margin: 92px;
+    margin-bottom: 92px;
+    padding-top: 75px;
 }
-h2::after
+.h2featur::after , .h2news::after
 {
     content: '';
     display: block;
@@ -106,30 +107,45 @@ h2::after
     width: 255px;
     float: left;
     padding-bottom: 30px;
-    padding-left: 15px;
+    padding-right: 30px;
 }
 
+.gallery-item:nth-child(4n)
+{
+    padding-right: 0px;
+}
+
+.gallery-item:hover
+{
+    background: #1abc9c;
+}
 .gallery-item p
 {
     color: #ffffff;
+
     text-transform: uppercase;
     float: left;
-    text-align: center;
-    font-size: 14px;
+    /* text-align: center; */
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold; 
         
 }
 .name-item
 {
-    height: 40px;
-    width: 200px;
+    /* height: 40px; */
+    width: 187px;
+    padding: 10px 0 10px 13px;
     background-color: #323232;
 }
 .prise-item
 {
-    /* 40 200 */
-    height: 40px;
+    padding: 10px 0 10px 0;
+    /* height: 40px; */
     width: 55px;
     background-color: #8c8c8c;
+    text-align: center;
 }
 .prise-item::before
 {
@@ -137,17 +153,66 @@ h2::after
 }
 main
 {
-    width: 1110px;
+    width: 1300px;
     margin: 0px auto;
 }
 .container
 {
     width: 1110px;
 }
-img{
+
+.gallery-img{
     background-color: #e9f0fd;
     height: 280px;
     width: 255px;
+    float: left;
 }
 
+/* 365 495 */
 
+.blogg
+{
+    width: 1110px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.blog-item
+{
+    float: left;
+    width: 350px;
+    height: 495px;
+    padding-right: 30px;
+}
+.blog-item:last-child
+{
+    padding-right: 0px;
+}
+
+.blog-img
+{
+    height: 265px;
+    width: 100%;
+}
+.blogg-text
+{
+    font-size: 14px;
+}
+.blogg-text::first-line
+{
+    font-size: 18px;
+    width: 255px;
+    font-weight: bold;
+}
+
+.blogg-text::after
+{
+    /* 3 136 */
+    content: '';
+    display: block;
+    height: 3px;
+    width: 136px;
+    background-color: #1abc9c;
+    margin: 32px auto 0 auto;
+
+}

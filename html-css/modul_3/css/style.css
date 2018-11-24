@@ -31,6 +31,8 @@ li
 .uppertext_using 
 {
 	text-transform: uppercase;
+	font-family: ubuntu;
+	color: #beb8ab;
 }
 
 
@@ -71,8 +73,8 @@ section
 	
 	display: inline-block;
 	width: 904px;
-	/* padding-left: 60px; */
 	margin: 0px auto;
+	font-size: 0px;
 }
 
 .coloms_block
