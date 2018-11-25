@@ -45,26 +45,27 @@ header{
     float: right;
     margin-top: 6px;
 }
-a:hover
+.site-navigation-item a:hover
 {
-    color: #baebe1;
+    color: #1abc9c;
 }
-.site-navigation li{
+.site-navigation-item{
     float: left;
     text-transform: uppercase;
     font-size: 10px;
+    color: #000000;
     /* width: 80px; */
     list-style: none;
     /* margin-right: 30px;    */
+    font-weight: bold;
+    padding: 0px 15px; 
 }
 
 
 
-a{
+.site-navigation-item a{
     text-decoration: none; 
-    font-weight: bold;
-    color: #b7b2b2;
-    padding: 0px 15px; 
+    /* color: #b7b2b2; */
      
 }
 
@@ -86,7 +87,7 @@ Uncle Lev, [21.11.18 20:50]
     text-align: center;
     text-transform: uppercase;
     font-size: 34px;
-    font-weight: bold;  
+    font-weight: 1000;  
     margin-bottom: 92px;
     padding-top: 75px;
 }
@@ -100,19 +101,76 @@ Uncle Lev, [21.11.18 20:50]
     margin: 32px auto 0 auto;
     
 }
+/* .gallery-img */
+{
+    background-color: #e9f0fd;
+    /* height: 280px; */
+    /* width: 255px; */
+    max-width: 100%;
+    max-height: 280px;
+    float: left;
+    /* overflow: hidden; */
+}
+.gallery-item::before
+{
+    content: '';
+    display: block;
+    height: 280px;
+
+    background: #e9f0fd;
+    /* background-image: url('../img/product6.png'); */
+    background-position: center;
+}
+.gallery-item:nth-child(1)::before
+{
+    background-image: url('../img/product1.png');
+}
+.gallery-item:nth-child(2)::before
+{
+    background-image: url('../img/product2.png');
+}
+.gallery-item:nth-child(3)::before
+{
+    background-image: url('../img/product9.png');
+}
+.gallery-item:nth-child(4)::before
+{
+    background-image: url('../img/product4.png');
+}
+.gallery-item:nth-child(5)::before
+{
+    background-image: url('../img/product3.png');
+}
+.gallery-item:nth-child(6)::before
+{
+    background-image: url('../img/product5.png');
+}
+.gallery-item:nth-child(7)::before
+{
+    background-image: url('../img/product6.png');
+}
+.gallery-item:nth-child(8)::before
+{
+    background-image: url('../img/product8.png');
+}
 .gallery-item
 {
     list-style: none;
     height: 320px;
     width: 255px;
     float: left;
-    padding-bottom: 30px;
-    padding-right: 30px;
+    /* padding-bottom: 30px; */
+    /* padding-right: 30px; */
+    margin: 0 30px 30px 0px;
+    background: #323232;
+    transition: 0.3s;
+    overflow: hidden;
 }
 
 .gallery-item:nth-child(4n)
 {
-    padding-right: 0px;
+    margin-right: 0; 
+    /* padding-right: 0px; */
 }
 
 .gallery-item:hover
@@ -125,48 +183,37 @@ Uncle Lev, [21.11.18 20:50]
 
     text-transform: uppercase;
     float: left;
-    /* text-align: center; */
     font-size: 18px;
     align-items: center;
     justify-content: center;
     font-weight: bold; 
-        
+    
 }
 .name-item
 {
-    /* height: 40px; */
     width: 187px;
     padding: 10px 0 10px 13px;
-    background-color: #323232;
 }
 .prise-item
 {
     padding: 10px 0 10px 0;
     /* height: 40px; */
     width: 55px;
-    background-color: #8c8c8c;
+    /* background-color: #8c8c8c; */
+    background-color: rgba(255,255,255,0.5);
     text-align: center;
 }
 .prise-item::before
 {
     content: '$';
 }
-main
-{
-    width: 1300px;
-    margin: 0px auto;
-}
+
 .container
 {
+    margin: 0px auto;
     width: 1110px;
 }
 
-.gallery-img{
-    background-color: #e9f0fd;
-    height: 280px;
-    width: 255px;
-    float: left;
-}
 
 /* 365 495 */
 
@@ -183,7 +230,9 @@ main
     width: 350px;
     height: 495px;
     padding-right: 30px;
+    overflow: hidden;
 }
+
 .blog-item:last-child
 {
     padding-right: 0px;
@@ -191,8 +240,13 @@ main
 
 .blog-img
 {
-    height: 265px;
-    width: 100%;
+    display: block;
+    font-size: 0px;
+    max-height: 260px;
+    /* max-width: 350px; */
+    
+    width: auto;
+    /* overflow: hidden; */
 }
 .blogg-text
 {
@@ -200,19 +254,64 @@ main
 }
 .blogg-text::first-line
 {
-    font-size: 18px;
-    width: 255px;
-    font-weight: bold;
+    /* font-size: 18px; */
+    /* width: 255px; */
+    /* font-weight: bold; */
 }
 
-.blogg-text::after
+
+
+.blog-button
 {
-    /* 3 136 */
+    /* 60 150 */
+    margin-top: 20px; 
+    width: 150px;
+    height: 60px;
+    background: #1abc9c;
+    border: 0;
+    font-size: 16px;
+    color: #fff; 
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.blog-button:hover
+{
+    border: 1px solid #1abc9c;
+    background: none;
+    color: #1abc9c;
+}
+.blog-text-big
+{
+    font-size: 18px;
+    /* width: 255px; */
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.blog-text-big::after
+{
     content: '';
     display: block;
     height: 3px;
     width: 136px;
     background-color: #1abc9c;
-    margin: 32px auto 0 auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
 
+.blogg-text
+{
+    height: 75px;
+    line-height: 2; 
+    overflow: hidden;
+}
+.fii
+{
+    height: 300px;
+    width: 300px;
+}
+.fi
+{
+    overflow: hidden;
 }
