@@ -10,7 +10,8 @@
     clear: both;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Roboto', sans-serif;
   
 }
 
@@ -18,7 +19,6 @@ header{
     padding-top: 40px;
     padding-bottom: 35px;
     margin: 0px auto;
-    width: 1110px;
     
     
 }
@@ -30,64 +30,66 @@ header{
     font-size: 20px;
     width: 80px;
     float: left;
-    color: #b7b2b2;
+    color: #555252;
+    font-size: 30pt;
+    font-weight: 100;
 }
 #logotipe::first-letter
 {
     color: #1abc9c;
-    font-weight: bold;  
+    font-weight: 1000 !important ; 
+
 
 }
 
 .site-navigation
 {
-    width: 490px;
+    width: 465px;
     float: right;
-    margin-top: 6px;
+    margin-top: 10px;
+    text-align: right;
 }
+
+
 .site-navigation-item a:hover
 {
     color: #1abc9c;
 }
 .site-navigation-item{
-    float: left;
+    float: right;
     text-transform: uppercase;
     font-size: 10px;
     color: #000000;
-    /* width: 80px; */
     list-style: none;
     /* margin-right: 30px;    */
     font-weight: bold;
     padding: 0px 15px; 
 }
-
+.site-navigation-item:nth-child(1)
+{
+    padding-right: 0;
+}
+.site-navigation-item:last-child
+{
+    padding-left: 0;
+}
 
 
 .site-navigation-item a{
     text-decoration: none; 
-    /* color: #b7b2b2; */
-     
+    transition: 0.4s;
+    font-size: 11pt;
 }
-
-/* 255 320 
-Uncle Lev, [21.11.18 20:49]
-e9f0fd
-
-Uncle Lev, [21.11.18 20:49]
-1abc9c
-
-Uncle Lev, [21.11.18 20:49]
-7fd9c7
-
-Uncle Lev, [21.11.18 20:50]
-555252*/
-
+h1
+{
+    font-weight: 900px;
+}
 
 .h2featur ,.h2news{
     text-align: center;
+    font-weight: 900;  
     text-transform: uppercase;
-    font-size: 34px;
-    font-weight: 1000;  
+    font-size: 35pt;
     margin-bottom: 92px;
     padding-top: 75px;
 }
@@ -101,21 +103,13 @@ Uncle Lev, [21.11.18 20:50]
     margin: 32px auto 0 auto;
     
 }
-/* .gallery-img */
-{
-    background-color: #e9f0fd;
-    /* height: 280px; */
-    /* width: 255px; */
-    max-width: 100%;
-    max-height: 280px;
-    float: left;
-    /* overflow: hidden; */
-}
+
 .gallery-item::before
 {
     content: '';
     display: block;
     height: 280px;
+    /* width: 100%; */
 
     background: #e9f0fd;
     /* background-image: url('../img/product6.png'); */
@@ -159,8 +153,6 @@ Uncle Lev, [21.11.18 20:50]
     height: 320px;
     width: 255px;
     float: left;
-    /* padding-bottom: 30px; */
-    /* padding-right: 30px; */
     margin: 0 30px 30px 0px;
     background: #323232;
     transition: 0.3s;
@@ -170,7 +162,6 @@ Uncle Lev, [21.11.18 20:50]
 .gallery-item:nth-child(4n)
 {
     margin-right: 0; 
-    /* padding-right: 0px; */
 }
 
 .gallery-item:hover
@@ -184,22 +175,20 @@ Uncle Lev, [21.11.18 20:50]
     text-transform: uppercase;
     float: left;
     font-size: 18px;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     font-weight: bold; 
     
 }
 .name-item
 {
-    width: 187px;
     padding: 10px 0 10px 13px;
+    width: 187px;
 }
 .prise-item
 {
     padding: 10px 0 10px 0;
-    /* height: 40px; */
     width: 55px;
-    /* background-color: #8c8c8c; */
     background-color: rgba(255,255,255,0.5);
     text-align: center;
 }
@@ -213,13 +202,13 @@ Uncle Lev, [21.11.18 20:50]
     margin: 0px auto;
     width: 1110px;
 }
-
-
-/* 365 495 */
-
+footer
+{
+    padding-bottom: 81px; 
+    font-family: 'Open Sans', sans-serif;
+}
 .blogg
 {
-    width: 1110px;
     margin: 0 auto;
     list-style: none;
 }
@@ -228,7 +217,7 @@ Uncle Lev, [21.11.18 20:50]
 {
     float: left;
     width: 350px;
-    height: 495px;
+    height: 520px;
     padding-right: 30px;
     overflow: hidden;
 }
@@ -242,28 +231,16 @@ Uncle Lev, [21.11.18 20:50]
 {
     display: block;
     font-size: 0px;
-    max-height: 260px;
-    /* max-width: 350px; */
+    height: 260px;
+    width: 350px; 
     
-    width: auto;
-    /* overflow: hidden; */
 }
 .blogg-text
 {
     font-size: 14px;
 }
-.blogg-text::first-line
-{
-    /* font-size: 18px; */
-    /* width: 255px; */
-    /* font-weight: bold; */
-}
-
-
-
 .blog-button
 {
-    /* 60 150 */
     margin-top: 20px; 
     width: 150px;
     height: 60px;
@@ -284,7 +261,6 @@ Uncle Lev, [21.11.18 20:50]
 .blog-text-big
 {
     font-size: 18px;
-    /* width: 255px; */
     font-weight: bold;
     line-height: 1.5;
     margin-top: 10px;
@@ -296,8 +272,8 @@ Uncle Lev, [21.11.18 20:50]
     height: 3px;
     width: 136px;
     background-color: #1abc9c;
-    margin-top: 15px;
-    margin-bottom: 30px;
+    margin-top: 14px;
+    margin-bottom: 20px;
 }
 
 .blogg-text
@@ -305,13 +281,6 @@ Uncle Lev, [21.11.18 20:50]
     height: 75px;
     line-height: 2; 
     overflow: hidden;
+    font-size: 14px;
 }
-.fii
-{
-    height: 300px;
-    width: 300px;
-}
-.fi
-{
-    overflow: hidden;
-}
+
