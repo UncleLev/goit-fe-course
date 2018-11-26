@@ -72,16 +72,16 @@ section
 {
 	
 	display: inline-block;
-	width: 904px;
+	width: 900px;
 	margin: 0px auto;
 	font-size: 0px;
+	height: 600px;
 }
 
 .coloms_block
 {
 	display: inline-block;
 	width: 420px;
-	height: 600px;
 	margin-right:60px;
 	font-size: 0px; 
 }
