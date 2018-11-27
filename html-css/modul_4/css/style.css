@@ -31,12 +31,12 @@ header{
     float: left;
     color: #555252;
     font-size: 30pt;
-    font-weight: 100;
+    font-weight: lighter;
 }
 #logotipe::first-letter
 {
     color: #1abc9c;
-    font-weight: 1000 !important ; 
+    font-weight: 800; 
 
 
 }
@@ -79,10 +79,7 @@ header{
     transition: 0.4s;
     font-size: 11pt;
 }
-h1
-{
-    font-weight: 900px;
-}
+
 
 .h2featur ,.h2news{
     text-align: center;
