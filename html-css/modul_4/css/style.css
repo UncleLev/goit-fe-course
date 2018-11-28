@@ -14,8 +14,8 @@ body{
 }
 
 header{
-    padding-top: 40px;
-    padding-bottom: 35px;
+    padding-top: 34px;
+    padding-bottom: 25px;
     margin: 0px auto;
     
     
@@ -26,8 +26,8 @@ header{
     text-transform: uppercase;
     float: left;
     color: #555252;
-    font-size: 21pt;
-    font-weight: lighter;
+    font-size: 30px;
+    font-weight: 100;
 }
 #logotipe::first-letter
 {
@@ -41,7 +41,7 @@ header{
 {
     width: 465px;
     float: right;
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: right;
 }
 
@@ -49,12 +49,13 @@ header{
 .site-navigation-item a:hover
 {
     color: #1abc9c;
+    font-weight: bold;
 }
 .site-navigation-item{
     float: right;
     text-transform: uppercase;
     list-style: none;
-    font-weight: bold;
+    font-weight: 800;
     padding: 0px 15px; 
 }
 .site-navigation-item:nth-child(1)
@@ -71,22 +72,18 @@ header{
     text-decoration: none; 
     color: #000000;
     transition: 0.4s;
-    font-size: 11pt;
+    font-size: 14px;
 }
-.h2featur
-{
-    font-weight: 900;  
-}
-.h2news
-{
-    font-weight: 700;  
-}
+
 .h2featur ,.h2news{
+    font-weight: 800;  
     text-align: center;
     text-transform: uppercase;
-    font-size: 35pt;
+    font-size: 48px;
     margin-bottom: 92px;
     padding-top: 75px;
+    letter-spacing: -2px;
+    /* line-height: 2; */
 }
 .h2featur::after , .h2news::after
 {
@@ -95,7 +92,7 @@ header{
     height: 7px;
     width: 160px;
     background-color: #1abc9c;
-    margin: 32px auto 0 auto;
+    margin: 20px auto 0 auto;
     
 }
 
@@ -256,6 +253,7 @@ footer
     font-weight: bold;
     line-height: 1.5;
     margin-top: 10px;
+    
 }
 .blog-text-big::after
 {
@@ -265,11 +263,11 @@ footer
     width: 136px;
     background-color: #1abc9c;
     margin-top: 14px;
-    margin-bottom: 20px;
 }
 
 .blogg-text
 {
+    padding-top: 20px;
     height: 75px;
     line-height: 2; 
     overflow: hidden;
