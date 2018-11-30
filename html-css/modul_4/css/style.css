@@ -41,30 +41,31 @@ header{
 {
     width: 465px;
     float: right;
-    margin-top: 5px;
-    text-align: right;
+    margin-top: 10px;
+    /* text-align: right; */
 }
+
 
 
 .site-navigation-item a:hover
 {
     color: #1abc9c;
-    font-weight: bold;
+    
 }
 .site-navigation-item{
     float: right;
     text-transform: uppercase;
     list-style: none;
     font-weight: 800;
-    padding: 0px 15px; 
+    margin: 0px 15px; 
 }
 .site-navigation-item:nth-child(1)
 {
-    padding-right: 0;
+    margin-right: 0;
 }
 .site-navigation-item:last-child
 {
-    padding-left: 0;
+    margin-left: 0;
 }
 
 
@@ -241,9 +242,10 @@ footer
     overflow: hidden;
     border-radius: 5px;
 }
-.blog-button:hover
+.blog-button:hover , .blog-button:focus , .blog-button:active
 {
     border: 1px solid #1abc9c;
+    outline: none;
     background: none;
     color: #1abc9c;
 }

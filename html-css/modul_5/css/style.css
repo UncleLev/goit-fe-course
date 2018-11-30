@@ -11,14 +11,16 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #e9f0fd;
 }
 
 header{
     /* position: fixed; */
+    background-color: #ffffff;
     padding-top: 34px;
     padding-bottom: 25px;
     margin: 0px auto;
-    
+    width: 100%;
     
 }
 #logotipe
@@ -187,7 +189,6 @@ header{
 {
     background-image: url('../img/item-4.jpg');
 }
-
 .gallery-item
 {
     position: relative;
@@ -211,6 +212,10 @@ header{
     background: #1abc9c;
 }
 
+.gallery-item::before:hover
+{
+    background-image: url("../img/slider.jpg");
+}
 
 .gallery-item p
 {
@@ -247,7 +252,22 @@ header{
 footer
 {
     /* padding-bottom: 81px;  */
-    height: 88px;
     font-family: 'Open Sans', sans-serif;
     background: #323232;
+}
+
+.rigths
+{
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 35px;
+    padding-top: 35px;
+}
+
+.rigths a
+{
+    /* outline-style: none; */
+    outline: none;
+    color: #1abc9c;
 }
