@@ -84,7 +84,9 @@ nav{
 }
 /* nav */
 /* HEADER */
-
+main{
+    padding: 10px
+}
 /* featured-proucts */
 h2{
     font-weight: 900;  

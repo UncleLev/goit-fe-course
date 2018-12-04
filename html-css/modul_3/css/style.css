@@ -2,13 +2,13 @@ body
 {
 	margin: 0px;
 	color: #626262;
-	font-family: 'Playfair Display', serif;
 }
 
 
 
 header
 {
+	font-family: 'Playfair Display', serif;
 	padding: 74px 8px 76px 8px; 
 }
 
@@ -61,13 +61,14 @@ h3
 
 
 img{
+	display: inline-block;
 	width: 420px;
 	height: 280px;
 	margin-bottom: 30px;
 }
 
 p{
-	line-height: 1.6;
+	line-height: 24px;
 	font-size: 14px;
 	margin: 0;
 }
@@ -79,17 +80,16 @@ h2
 }
 main
 {
-	padding: 10px;
+	padding: 10px 10px 50px 10px;
 	display: block;
 	width: 900px;
 	margin: 0px auto;
+	
 }
 section
 {
-	
-	display: inline-block;
-	width: 900px;
-	margin: 0px auto 130px auto;
+	font-family: 'Playfair Display', serif;
+	margin: 0 0 130px;
 	font-size: 0px;
 }
 
@@ -109,11 +109,6 @@ section:nth-child(3)
 	margin-right: 0px
 }
 
-footer
-{
-	padding-top: 55px;
-	padding-bottom: 55px;
-}
 
 .button-item:hover , .button-item:focus, .button-item:active
 {
@@ -131,7 +126,7 @@ footer
 	font-family: 'Playfair Display', serif; 
 	display: block;
 	color: #626262;
-	margin: 0px auto 60px auto;
+	margin: 0px auto;
 	background-color: white;
 	width: 165px;
 	padding: 16px;
