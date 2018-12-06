@@ -143,7 +143,7 @@ h2::after
     background: #1abc9c;
 }
 
-.gallery-item span
+.gallery-item p
 {
     color: #ffffff;
     text-transform: uppercase;
