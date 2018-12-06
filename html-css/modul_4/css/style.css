@@ -30,8 +30,6 @@ header{
 #logotipe::first-letter{
     color: #1abc9c;
     font-weight: 900; 
-
-
 }
 /* nav */
 
@@ -141,6 +139,7 @@ h2::after
 
 .gallery-item:hover
 {
+    cursor: pointer;
     background: #1abc9c;
 }
 
@@ -254,6 +253,7 @@ h3::after
 }
 .blog-button:hover , .blog-button:focus , .blog-button:active
 {
+    cursor: pointer;
     border: 1px solid #1abc9c;
     outline: none;
     background: none;
