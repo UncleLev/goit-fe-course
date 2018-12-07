@@ -165,6 +165,7 @@ main{
     background: #e9f0fd;
     width: 255px;
 }
+/* card */
 .card{
     height: 280px;
     width: 255px;
@@ -224,6 +225,9 @@ main{
     background: #323232;
     border: 1px solid #fff; 
 }
+
+
+
 .icon{
     float: left;
     font-size: 30px;
@@ -238,6 +242,7 @@ main{
     color: #ffffff;
     font-size: 14px;
 }
+
 
 .products{
     width: 1110px;
