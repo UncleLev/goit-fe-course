@@ -10,6 +10,10 @@ body{
 a{
     text-decoration: none;
 }
+.container{
+    width: 1600px;
+    margin: 0 auto;
+}
 /* Header  */
 header{
     font-family: 'Roboto', sans-serif;
@@ -17,10 +21,7 @@ header{
     margin: 0 auto;
 }
 /* nav  */
-nav{
-    width: 1600px;
-    margin: 0 auto;
-}
+
 .logotipe{
     text-align: left;
     text-transform: uppercase;
@@ -78,14 +79,14 @@ nav{
 main{
     font-family: 'Roboto', sans-serif;
     background-color: #e9f0fd;
-    width: 1600px;
+    /* width: 1600px; */
     margin: 0 auto;
     padding: 5px 5px 50px;
 }
 /* slider */
 .slider{
     position: relative;
-    margin: 0 0 88px;
+    margin-bottom:  88px;
     /* height: 600px; */
     /* width: 1600px; */
 }
