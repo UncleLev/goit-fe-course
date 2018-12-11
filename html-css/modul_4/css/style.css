@@ -20,7 +20,7 @@ header{
     margin: 0 auto;
 }
 
-#logotipe{
+.logotipe{
     text-align: left;
     text-transform: uppercase;
     float: left;
@@ -30,7 +30,7 @@ header{
     margin: 0;
 }
 
-#logotipe::first-letter{
+.logotipe::first-letter{
     color: #1abc9c;
     font-weight: 900; 
 }

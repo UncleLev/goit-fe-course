@@ -17,7 +17,7 @@ header{
     margin: 0 auto;
 }
 /* nav  */
-#logotipe{
+.logotipe{
     text-align: left;
     text-transform: uppercase;
     float: left;
@@ -27,7 +27,7 @@ header{
     margin: 0;
 }
 
-#logotipe::first-letter{
+.logotipe::first-letter{
     color: #1abc9c;
     font-weight: 900; 
 }
@@ -189,12 +189,16 @@ main{
 }
 .card-menu{
     position: absolute;
+    background: none;
+    outline: none;
     top: 0;
     left: 0;
     opacity: 0;
     z-index: 2;
     border: 1px solid #fff; 
     color: #fff;
+    font-size: 30px;
+    padding: 10px;
 }
 .card:hover .card-menu{
     opacity: 1;
@@ -216,12 +220,13 @@ main{
     width: 164px;
     top: 150px;
     left: 45px;
+    padding: 0;
 }
-.card-menu:hover {
+.card-menu:hover, .card-menu:focus {
     background: #1abc9c;
     border-color: transparent;
 }
-.card-menu4:hover{
+.card-menu4:hover, .card-menu4:focus{
     background: #323232;
     border: 1px solid #fff; 
 }
@@ -233,14 +238,16 @@ main{
     font-size: 30px;
     padding: 10px;
 }
+
 .card-text{
     font-family: 'Open Sans', sans-serif;
-    padding: 19px 5px;
+    padding: 19px 17px 19px 8px;
     margin: 0;
-    float: left;
+    float: right;
     text-transform: uppercase;
     color: #ffffff;
     font-size: 14px;
+    letter-spacing: -0.04em;
 }
 
 
