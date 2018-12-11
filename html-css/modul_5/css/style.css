@@ -17,6 +17,10 @@ header{
     margin: 0 auto;
 }
 /* nav  */
+nav{
+    width: 1600px;
+    margin: 0 auto;
+}
 .logotipe{
     text-align: left;
     text-transform: uppercase;

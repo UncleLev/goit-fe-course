@@ -10,6 +10,10 @@ header{
 #eaffd0
 #fce38a
 #f38181 */
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
 #logotipe{
     font-weight: bold;
     text-decoration: none;
@@ -20,7 +24,6 @@ nav a{
     color: #95e1d3;
 }
 nav{
-    width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: flex-end;
@@ -61,7 +64,6 @@ nav{
 main
 {
     Font-family: 'Montserrat', sans-serif;
-    width: 1200px;
     margin: 0 auto; 
 }
 h2 , h3{
@@ -185,10 +187,7 @@ h2::after{
     left: 68px;
     z-index: 2;
 }
-.icon img{
-    /* width: 26px; */
-    /* height: 26px; */
-}
+
 .icon{
     display: flex;
     align-items: center;
@@ -198,9 +197,16 @@ h2::after{
     background: #fce38a;
 }
 
+
 .icon:hover{
     cursor: pointer;
     background: #95e1d3;
+}
+
+footer{
+    border-top: 1px solid #95e1d3;
+    display: flex;
+    justify-content: space-between;
 }
 address{
     font-style: normal;
