@@ -79,7 +79,6 @@ header{
 main{
     font-family: 'Roboto', sans-serif;
     background-color: #e9f0fd;
-    /* width: 1600px; */
     margin: 0 auto;
     padding: 5px 5px 50px;
 }
@@ -87,15 +86,11 @@ main{
 .slider{
     position: relative;
     margin-bottom:  88px;
-    /* height: 600px; */
-    /* width: 1600px; */
 }
 
 .slider-item{
     position: absolute;
     padding: 5px;
-    /* width: 780px; */
-    /* margin: 0 auto; */
     top: 208px;
     left: 430px;
 }

@@ -64,7 +64,6 @@ nav{
 main
 {
     Font-family: 'Montserrat', sans-serif;
-    margin: 0 auto; 
 }
 h2 , h3{
     text-align: center;
@@ -204,9 +203,14 @@ h2::after{
 }
 
 footer{
-    border-top: 1px solid #95e1d3;
+    Font-family: 'Montserrat', sans-serif; 
+    border-top: 1px solid #e5e5e5;
     display: flex;
     justify-content: space-between;
+    height: 62px;
+    align-content: space-around;
+    align-items: space-around;
+
 }
 address{
     font-style: normal;
@@ -215,7 +219,25 @@ address a{
     color: #f38181;
     text-decoration: none;
 }
+.subscribing{
+    display: flex;
+    justify-content: flex-end;
 
+}
+.subscribing input{
+    border: 1px solid #e5e5e5;
+    border-right: none;
+}
+.subscribing button{
+    width: 150px;
+    background: #95e1d3;
+    text-transform: uppercase;
+    border-color: transparent;
+    font-size:14px;
+    color: #ffffff;
+    padding: 5px 18px;
+    outline: none;
+}
 
 
 
