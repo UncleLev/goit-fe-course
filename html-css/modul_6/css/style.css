@@ -4,17 +4,23 @@ body{
 header{
     Font-family: 'Montserrat', sans-serif; 
     color: #95e1d3;
-    padding: 26px 5px 110px;
+    padding: 26px 5px 113px;
 }
 /* #95e1d3
 #eaffd0
 #fce38a
 #f38181 */
+
+.wraper {
+    width: 1920px;
+    margin: 0 auto;
+}
+
 .container{
     width: 1200px;
     margin: 0 auto;
 }
-#logotipe{
+.logotipe{
     font-weight: bold;
     text-decoration: none;
     font-size: 30px;
@@ -33,7 +39,7 @@ nav{
     padding: 0;
     list-style: none;
     margin: 0;
-    width: 500px;
+    width: 490px;
     display: flex;
     justify-content: space-between;
 }
@@ -64,19 +70,24 @@ nav{
 main
 {
     Font-family: 'Montserrat', sans-serif;
+    padding-bottom: 80px;
 }
 h2 , h3{
     text-align: center;
+    margin-top: 0;
+
 }
 
 h3
 {
     font-size: 24px;
+    margin-bottom: 13px;
 }
 h2{
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 700;
+    margin-bottom: 60px;
 }
 
 h2::after{
@@ -87,47 +98,68 @@ h2::after{
     height: 3px;
     margin: 36px auto 0;
 }
-
+.services-title {
+}
 .services{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 240px;
+    height: 245px;
     align-content: space-between;
+    margin-bottom: 86px;
 }
 
-.services-item{
+.services-item {
     display: flex;
     justify-content: space-between;
-    width: 380px;
+    width: 344px;
     align-items: flex-start;
 }
-.services-item img{
-    margin-right: 30px;
+.services-item img {
+    margin: 5px 30px 0 0;
 
 }
-.services-text h4{
-    margin: 0 0 12px;
+.services-text h4 {
+    margin: 0 0 10px;
+    font-size: 14px;
     text-transform: uppercase;
 }
-.services-text p{
+.services-text p {
     margin: 0;
+    font-size: 15px;
+    color: #999999;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
 }
 
-.team{
+.staff h2 {
+    margin-bottom: 40px
+}
+
+.staff-information {
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+    color: #999999;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+    width: 952px;
+    margin: 0 auto 89px auto;
+}
+
+.team {
     display: flex;
     justify-content: space-between;
 }
-.team-item{
-    /* position: relative; */
-}
+
 .staff-card{
     position: relative;
     display: flex;
-    /* justify-content: space-between; */
     background: #95e1d3;
     width: 380px;
     height: 470px;
+    margin-bottom: 28px; 
+
 }
 .staff-card::after
 {
@@ -202,18 +234,38 @@ h2::after{
     background: #95e1d3;
 }
 
-footer{
+.name {
+    Font-family: 'Montserrat', sans-serif; 
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.job {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: #999999;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0;
+}
+
+.information{
     Font-family: 'Montserrat', sans-serif; 
     border-top: 1px solid #e5e5e5;
     display: flex;
     justify-content: space-between;
-    height: 62px;
-    align-content: space-around;
-    align-items: space-around;
+    align-items: center;
+    padding: 10px 10px; 
+    width: 1200px;
+    margin: 0 auto;
 
 }
 address{
     font-style: normal;
+    font-size: 14px;
 }
 address a{
     color: #f38181;
@@ -227,6 +279,14 @@ address a{
 .subscribing input{
     border: 1px solid #e5e5e5;
     border-right: none;
+    height: 40px;
+    font-size: 15px;
+    /* line-height: 24pt; */
+    font-style: italic;
+    color: #999999;
+    width: 230px;
+    margin: 0;
+    padding: 0;
 }
 .subscribing button{
     width: 150px;
@@ -235,8 +295,9 @@ address a{
     border-color: transparent;
     font-size:14px;
     color: #ffffff;
-    padding: 5px 18px;
+    padding: 0px 18px;
     outline: none;
+    font-weight: bold;
 }
 
 

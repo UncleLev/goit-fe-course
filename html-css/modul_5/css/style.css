@@ -17,11 +17,15 @@ a{
 /* Header  */
 header{
     font-family: 'Roboto', sans-serif;
-    padding: 20px 10px 78px;
+    padding: 32px 0 0;
     margin: 0 auto;
+    /* width: 1600px; */
 }
 /* nav  */
-
+nav {
+    width: 1110px;
+    margin: 0 auto 22px; 
+}
 .logotipe{
     text-align: left;
     text-transform: uppercase;
@@ -80,19 +84,23 @@ main{
     font-family: 'Roboto', sans-serif;
     background-color: #e9f0fd;
     margin: 0 auto;
-    padding: 5px 5px 50px;
+    padding: 90px 5px 96px;
+    /* width: 1590px; */
 }
 /* slider */
 .slider{
+    margin: 0 auto;
     position: relative;
-    margin-bottom:  88px;
+    background-image: url(../img/slider.jpg);
+    width: 1600px;
+    height: 600px;
 }
 
 .slider-item{
     position: absolute;
     padding: 5px;
-    top: 208px;
-    left: 430px;
+    top: 200px;
+    left: 426px;
 }
 .slider-item1, .slider-item2{
     color: #ffffff;
@@ -100,13 +108,13 @@ main{
 .slider-item1{
     margin: 0 0 16px;
     font-size: 60px;
-    letter-spacing: -4px;
+    letter-spacing: -0.015em;
 }
 .slider-item2{
     font-weight: 100;
     font-size: 24px;
     margin: 0;
-    letter-spacing: -1px;
+    letter-spacing: -0.020em;
 }
 
 
@@ -114,6 +122,7 @@ main{
     position: absolute;
     color: #ffffff;
     font-size: 100px;
+    padding: 3px 3px;
     border: none;
     background: rgba(26,188,156,0.65);
     top: 224px;
@@ -122,7 +131,7 @@ main{
     left: 245px;
 }
 .slider-button2{
-    right: 245px;
+    right: 244px;
 }
 .slider-button1:focus, .slider-button1:hover , .slider-button2:hover , .slider-button2:focus{
     cursor: pointer;
@@ -130,6 +139,7 @@ main{
     background: rgba(26,188,156,1);
 }
 /* slider end */
+
 /* Products */
 .product-title{
     color: #515151;  
@@ -139,7 +149,7 @@ main{
     font-size: 48px;
     margin: 0 0 82px ;
     padding-top: 0px;
-    letter-spacing: -2px;
+    letter-spacing: -0.020em;
 }
 
 .product-title::after{
@@ -159,12 +169,7 @@ main{
     margin: 0;
 }
 
-.product-img{
-    position: relative;
-    float: left;
-    background: #e9f0fd;
-    width: 255px;
-}
+
 /* card */
 .card{
     height: 280px;
@@ -198,50 +203,45 @@ main{
     border: 1px solid #fff; 
     color: #fff;
     font-size: 30px;
-    padding: 10px;
+    padding: 10px 8px 9px 10px;
 }
 .card:hover .card-menu{
     opacity: 1;
 }
 
 .card-menu1{
-    top: 90px;
+    top: 88px;
     left: 45px;
 }
 .card-menu2{
-    top: 90px;
+    top: 88px;
     left: 104px;
 }
 .card-menu3{
-    top: 90px;
+    top: 88px;
     left: 161px;
 }
 .card-menu4{
-    width: 164px;
-    top: 150px;
+    width: 166px;
+    top: 145px;
     left: 45px;
     padding: 0;
+    background: #323232;
 }
 .card-menu:hover, .card-menu:focus {
     background: #1abc9c;
     border-color: transparent;
 }
-.card-menu4:hover, .card-menu4:focus{
-    background: #323232;
-    border: 1px solid #fff; 
-}
-
-
 
 .icon{
     float: left;
     font-size: 30px;
-    padding: 10px;
+    padding: 9px 9px 9px 9px;
 }
 
 .card-text{
     font-family: 'Open Sans', sans-serif;
-    padding: 19px 17px 19px 8px;
+    padding: 15px 17px 9px 8px;
     margin: 0;
     float: right;
     text-transform: uppercase;
