@@ -160,6 +160,7 @@ main
 
 .contact-background-img {
     /* display: flex; */
+    min-width: 1400px;
     background-position: right bottom;
     background-image: url(../img/Map-Image.png);
     background-repeat: no-repeat;
@@ -172,14 +173,7 @@ main
     padding-bottom: 115px;
 }
 
-/* .contact {
-    padding-top: 100px; 
-    padding-bottom: 115px;
-    background-color: #222222;
-    background-position: right bottom;
-    background-image: url(../img/Map-Image.png);
-    background-repeat: no-repeat; 
-} */
+
 .contact {
     width: 1400px;
     margin: 0 auto;
