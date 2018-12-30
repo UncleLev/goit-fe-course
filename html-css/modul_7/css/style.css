@@ -45,6 +45,8 @@ body{
 }
 header{
     padding: 36px 5px 113px;
+    width: 1400px;
+    margin: 0 auto;
 }
 
 .wraper {
@@ -154,12 +156,33 @@ main
     line-height: 1.6em;
 }
 
-.contact {
+
+
+.contact-background-img {
+    /* display: flex; */
+    background-position: right bottom;
+    background-image: url(../img/Map-Image.png);
+    background-repeat: no-repeat;
+    background-color: #222222;
+    
+    /* order: 3; */
+}
+.сontact-background {
+    padding-top: 100px; 
+    padding-bottom: 115px;
+}
+
+/* .contact {
     padding-top: 100px; 
     padding-bottom: 115px;
     background-color: #222222;
+    background-position: right bottom;
     background-image: url(../img/Map-Image.png);
-    background-repeat: none; 
+    background-repeat: no-repeat; 
+} */
+.contact {
+    width: 1400px;
+    margin: 0 auto;
 }
 
 .contact h2{
@@ -175,6 +198,8 @@ main
 .inputing {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 28px;
+
 }
 
 input { 
@@ -204,9 +229,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    height: 215px;
     width: 455px;
-    margin-bottom: 28px;
 }
 input, textarea, form button{
     overflow: hidden;
@@ -235,6 +258,18 @@ input[type="submit"] {
     width: 240px;
     height: 64px;
     margin: 0 auto;
+    transition: 0.4s;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+input[type="submit"]:active {
+    cursor: pointer;
+    background: #f7dd7f;
+    outline: none;
+    
 }
 
 
