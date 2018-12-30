@@ -104,7 +104,8 @@ main
 }
 
 .services{
-    margin-bottom: 120px;
+    width: 1400px;
+    margin: 0 auto 120px;
 }
 
 .services h2 , .contact h2 {
