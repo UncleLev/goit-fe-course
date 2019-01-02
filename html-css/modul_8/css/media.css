@@ -1,9 +1,5 @@
 @media (min-width: 320px) {
-    header {
-        background-color: #1a1915;
-        height: 540px;
-        margin: 0 auto;
-    }
+    
     .header-backgroud {
         height: 540px;
         background-image: url(../img/promo-mobile.jpg) ;
@@ -24,7 +20,10 @@
     .logo {
         text-align: center;
     }
+    header {
+    height: 540px;
 
+    }
     
     header h2 {
         margin-bottom: 12px; 
@@ -36,6 +35,15 @@
         width: 220px;
         margin: 0 auto 17px;
         text-align: center;
+    }
+    .finding {
+        width: 278px;
+    }
+    main {
+        padding: 65px 5px 5px;
+    }
+    main {
+        padding-bottom: 57px;
     }
 
     section h2 {
@@ -58,4 +66,110 @@
     .partners-item p {
         font-size: 14px;
     }
+}
+
+@media (min-width: 768px) {
+    .header-backgroud {
+        height: 700px;
+        background-image: url(../img/promo-table.jpg) ;
+        width: 768px;
+        background-repeat: no-repeat;
+        margin: 0 auto;      
+    }
+    header {
+        height: 700px;
+    }
+    
+    
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        width: 670px;
+        margin: 0 auto 143px;
+        padding-top: 37px;
+    }
+    
+    
+    .entering {
+        margin: 0 ;
+        order: 2;
+    }
+
+
+
+    .logo {
+        order: 1;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    
+
+    header h2 {
+        text-align: center;
+        font-size: 52px;
+        width: 600px;
+        margin: 0 auto 25px;
+        line-height: 1.2em;
+    }
+    header h3 {
+        width: 100%;
+        font-size: 24px;
+        margin: 0 auto 34px;
+        text-align: center;
+    }
+    .finding {
+        width: 224px;
+    }
+
+    main {
+        padding: 68px 5px 5px;
+    }
+
+    section h2 {
+        font-size: 22px;
+        margin: 0 0 34px;
+    }
+
+    .partners{
+        display: flex;
+        flex-wrap: wrap;
+        width: 498px;
+        justify-content: space-between;
+        margin: 0 auto 28px;
+    }
+
+
+    .partners-item2 {
+        order: 3;
+    }
+
+    .partners-item3 {
+        order: 2;
+    }
+
+    .partners-item4 {
+        order: 4;
+    }
+
+
+    .partners-item{
+        width: 236px;
+        margin: 0;
+    }
+
+
+    .partners-item:not(:last-child) {
+        margin-bottom:  54px;
+    }
+    .partners-item h3{
+        font-size: 14px;
+    }
+    .partners-item p {
+        font-size: 14px;
+        width: 217px;
+    }
+}
 }

@@ -38,7 +38,10 @@ body {
 
 /* header */
 
-
+header {
+    background-color: #1a1915;
+    margin: 0 auto;
+}
 
 header h2 , header button , .partners h3, .show-patners {
     font-family: 'Montserrat';
@@ -113,7 +116,7 @@ header h3 {
     font-weight: bold;
     border-radius: 50px;
     margin: 0 auto;
-    width: 278px;
+    /* width: 278px; */
     padding: 10px 7px;    
 }
 
