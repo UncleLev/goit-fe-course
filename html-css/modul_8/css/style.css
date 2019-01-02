@@ -36,8 +36,11 @@ body {
             url('../font/roboto-v18-latin/roboto-v18-latin-300.woff') format('woff'); /* Modern Browsers */
 }
 
+/* header */
 
-header h2 , header button , .partners h3, .partners button {
+
+
+header h2 , header button , .partners h3, .show-patners {
     font-family: 'Montserrat';
     
 }
@@ -48,14 +51,73 @@ header h3, .partners p {
     
 }
 
-header button {
-    color: #ffffff;
-    background-color:#ff4e50; 
-    border: none;
+nav {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding-top: 20px;
 }
-nav ul {
+.entering{
     list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 155px;
+    justify-content: space-between;
 }
+
+.entering a{
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+
+.signing{
+    border: 2px solid #ffffff;
+    overflow: hidden;
+    border-radius: 19px;
+    padding: 7px 15px !important;
+}
+
+.entering li{
+    padding-top: 10px; 
+
+}
+.logo {
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-size: 20px;
+}
+
+header h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+}
+header h3 {
+    color: #ffffff;
+    margin: 0;
+}
+
+
+.finding {
+    display: block;
+    color: #ffffff;
+    background-color: #ff4e50;
+    border: 2px solid #ff4e50;
+    /* border: none; */
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50px;
+    margin: 0 auto;
+    width: 278px;
+    padding: 10px 7px;    
+}
+
+/* header */
 
 main {
     padding: 65px 5px 5px;
@@ -108,7 +170,15 @@ section h2{
 
 
 .show-patners {
+    display: block;
     color: #ff4e50;
     background-color: #ffffff;
-    border: solid #ff4e50;
+    border: 2px solid #ff4e50;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 50px;
+    margin: 0 auto;
+    width: 270px;
+    padding: 10px 5px;
 }

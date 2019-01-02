@@ -1,13 +1,50 @@
 @media (min-width: 320px) {
     header {
         background-color: #1a1915;
-        background-image: url(../img/promo-mobile.jpg) ;
         height: 540px;
-        background-repeat: no-repeat;
+        margin: 0 auto;
     }
+    .header-backgroud {
+        height: 540px;
+        background-image: url(../img/promo-mobile.jpg) ;
+        width: 320px;
+        background-repeat: no-repeat;
+        margin: 0 auto;      
+    }
+
+    
+    .entering {
+        margin: 0 auto 116px;
+    }
+
+    nav {
+        margin-bottom: 30px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    
+    header h2 {
+        margin-bottom: 12px; 
+        text-align: center;
+        font-size: 30px;
+    }
+    header h3 {
+        font-size: 18px;
+        width: 220px;
+        margin: 0 auto 17px;
+        text-align: center;
+    }
+
     section h2 {
         font-size: 22px;
         margin: 0 0 16px;
+    }
+
+    .partners{
+        margin-bottom: 28px;
     }
     .partners-item{
         margin: 0 auto;
