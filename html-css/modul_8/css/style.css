@@ -79,7 +79,6 @@ nav {
 
 .signing{
     border: 2px solid #ffffff;
-    overflow: hidden;
     border-radius: 19px;
     padding: 7px 15px !important;
 }
@@ -105,36 +104,33 @@ header h3 {
     margin: 0;
 }
 
+button:hover , button:active {
+    outline: none;
+    cursor: pointer;
+}
 
 .finding {
     display: block;
     color: #ffffff;
     background-color: #ff4e50;
     border: 2px solid #ff4e50;
-    /* border: none; */
     font-size: 14px;
     font-weight: bold;
     border-radius: 50px;
     margin: 0 auto;
-    /* width: 278px; */
     padding: 10px 7px;    
 }
 
 /* header */
 
-main {
-    padding: 65px 5px 5px;
-}
+
 
 section h2{
     font-family: 'Montserrat';
     text-align: center;
-    /* letter-spacing: 0.5em; */
 }
 
-.partners-item {
-    width: 220px;
-}
+
 
 .partner-photo{
     position: relative;
@@ -179,7 +175,6 @@ section h2{
     border: 2px solid #ff4e50;
     font-size: 14px;
     font-weight: bold;
-    overflow: hidden;
     border-radius: 50px;
     margin: 0 auto;
     width: 270px;
