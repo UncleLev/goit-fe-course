@@ -13,13 +13,14 @@ a{
 .container{
     width: 1600px;
     margin: 0 auto;
+    padding: 1px;
 }
 /* Header  */
 header{
     font-family: 'Roboto', sans-serif;
     padding: 32px 0 0;
     margin: 0 auto;
-    /* width: 1600px; */
+    width: 1600px;
 }
 /* nav  */
 nav {
@@ -84,15 +85,13 @@ main{
     font-family: 'Roboto', sans-serif;
     background-color: #e9f0fd;
     margin: 0 auto;
-    padding: 90px 5px 96px;
+    padding: 90px 0px 98px;
     /* width: 1590px; */
 }
 /* slider */
 .slider{
-    margin: 0 auto;
     position: relative;
     background-image: url(../img/slider.jpg);
-    width: 1600px;
     height: 600px;
 }
 
@@ -147,7 +146,7 @@ main{
     text-align: center;
     text-transform: uppercase;
     font-size: 48px;
-    margin: 0 0 82px ;
+    margin: 0 0 79px ;
     padding-top: 0px;
     letter-spacing: -0.020em;
 }
@@ -314,8 +313,8 @@ address{
     color: #ffffff;
     text-align: center;
     font-size: 16px;
-    padding-bottom: 35px;
-    padding-top: 35px;
+    padding-bottom: 31px;
+    padding-top: 33px;
     font-style: normal;
 }
 
