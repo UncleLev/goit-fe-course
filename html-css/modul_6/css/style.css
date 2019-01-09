@@ -3,8 +3,7 @@ body{
 }
 header{
     Font-family: 'Montserrat', sans-serif; 
-    color: #95e1d3;
-    padding: 26px 5px 113px;
+    padding: 22px 5px 110px;
 }
 /* #95e1d3
 #eaffd0
@@ -22,15 +21,14 @@ header{
 }
 .logotipe{
     font-weight: bold;
-    text-decoration: none;
     font-size: 30px;
+    padding-bottom: 3px; 
 }
 nav a{
     text-decoration: none;
     color: #95e1d3;
 }
 nav{
-    margin: 0 auto;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -48,7 +46,6 @@ nav{
     font-size: 14px;
     text-transform: uppercase;
     line-height: -1;
-    /* font-weight: bold; */
 }
 
 .site-navigation a:hover{
@@ -70,7 +67,7 @@ nav{
 main
 {
     Font-family: 'Montserrat', sans-serif;
-    padding-bottom: 80px;
+    padding: 1px 1px 80px;
 }
 h2 , h3{
     text-align: center;
@@ -81,13 +78,14 @@ h2 , h3{
 h3
 {
     font-size: 24px;
-    margin-bottom: 13px;
+    margin-bottom: 9px;
+    font-family: 'Kaushan Script', cursive;
 }
 h2{
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 60px;
+    margin-bottom: 62px;
 }
 
 h2::after{
@@ -98,16 +96,22 @@ h2::after{
     height: 3px;
     margin: 36px auto 0;
 }
-.services-title {
+
+.services {
+    margin-bottom: 83px;
 }
-.services{
+
+.services-block {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 245px;
-    align-content: space-between;
-    margin-bottom: 86px;
 }
+
+.services-block:not(:last-child) {
+    margin-bottom: 92px;
+}
+
+
 
 .services-item {
     display: flex;
@@ -116,11 +120,11 @@ h2::after{
     align-items: flex-start;
 }
 .services-item img {
-    margin: 5px 30px 0 0;
-
+    margin: 0 29px 0 2px;
+    padding-top: 5px;
 }
 .services-text h4 {
-    margin: 0 0 10px;
+    margin: 0 0 13px;
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -138,7 +142,6 @@ h2::after{
 
 .staff-information {
     text-align: center;
-    margin: 0;
     font-size: 15px;
     color: #999999;
     line-height: 24px;
@@ -235,11 +238,10 @@ h2::after{
 }
 
 .name {
-    Font-family: 'Montserrat', sans-serif; 
     font-size: 14px;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
 }
 
 .job {
@@ -258,9 +260,8 @@ h2::after{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10px; 
-    width: 1200px;
-    margin: 0 auto;
+    padding: 10px ; 
+    
 
 }
 address{
@@ -276,30 +277,34 @@ address a{
     justify-content: flex-end;
 
 }
-.subscribing input{
+.subscribing input[type="email"]{
     border: 1px solid #e5e5e5;
     border-right: none;
     height: 40px;
     font-size: 15px;
-    /* line-height: 24pt; */
-    font-style: italic;
-    color: #999999;
     width: 230px;
     margin: 0;
     padding: 0;
 }
-.subscribing button{
+.subscribe {
     width: 150px;
     background: #95e1d3;
     text-transform: uppercase;
     border-color: transparent;
     font-size:14px;
     color: #ffffff;
-    padding: 0px 18px;
+    padding: 10px 18px;
     outline: none;
     font-weight: bold;
 }
 
+
+input::placeholder {
+    color: #bbbbbb;
+    text-indent: 10px;
+    font-style: italic;
+
+}
 
 
 
