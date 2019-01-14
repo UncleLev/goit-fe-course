@@ -7,6 +7,12 @@
 body{
     margin: 0px;
 }
+
+.wrapper {
+    width: 1600px;
+    margin: 0 auto;
+}
+
 a{
     text-decoration: none;
 }
@@ -18,12 +24,17 @@ a{
 /* Header  */
 header{
     font-family: 'Roboto', sans-serif;
-    padding: 32px 0 0;
     margin: 0 auto;
     width: 1600px;
+    position: relative;
+    background-image: url(../img/slider.jpg);
+    height: 600px;
+
 }
 /* nav  */
 nav {
+    font-family: 'Roboto', sans-serif;
+    padding: 32px 0 0;
     width: 1110px;
     margin: 0 auto 22px; 
 }
@@ -65,7 +76,7 @@ nav {
 
 
 
-.site-navigation-item:nth-child(1){
+.site-navigation-item:first-child{
     margin-right: 0;
 }
 
@@ -75,27 +86,21 @@ nav {
     display: block;
     text-transform: uppercase;
     padding: 2px;
-    text-decoration: none; 
     color: #000000;
     font-size: 14px;
 }
 /* nav end */
 /* Header end */
-main{
+section {
     font-family: 'Roboto', sans-serif;
     background-color: #e9f0fd;
     margin: 0 auto;
-    padding: 90px 0px 98px;
-    /* width: 1590px; */
+    padding: 90px 0px 100px;
 }
 /* slider */
-.slider{
-    position: relative;
-    background-image: url(../img/slider.jpg);
-    height: 600px;
-}
 
-.slider-item{
+
+.slider-items{
     position: absolute;
     padding: 5px;
     top: 200px;
@@ -103,6 +108,8 @@ main{
 }
 .slider-item1, .slider-item2{
     color: #ffffff;
+    text-transform: uppercase;
+    
 }
 .slider-item1{
     margin: 0 0 16px;
@@ -119,18 +126,23 @@ main{
 
 .slider-button2 , .slider-button1{
     position: absolute;
+    padding: 0; 
+    border: none;
+    background: rgba(26,188,156,0.65);
+    top: 24px;
+}
+
+.slider-button1 span, .slider-button2 span {
     color: #ffffff;
     font-size: 100px;
     padding: 3px 3px;
-    border: none;
-    background: rgba(26,188,156,0.65);
-    top: 224px;
 }
+
 .slider-button1{
-    left: 245px;
+    left: -182px;
 }
 .slider-button2{
-    right: 244px;
+    right: -183px;
 }
 .slider-button1:focus, .slider-button1:hover , .slider-button2:hover , .slider-button2:focus{
     cursor: pointer;
@@ -147,7 +159,6 @@ main{
     text-transform: uppercase;
     font-size: 48px;
     margin: 0 0 79px ;
-    padding-top: 0px;
     letter-spacing: -0.020em;
 }
 
@@ -175,8 +186,7 @@ main{
     width: 255px;
     position: relative;
 }
-.card::after{
-    content: "";
+.card-bacground{
     position: absolute;
     width: 235px;
     height: 260px;
@@ -188,38 +198,59 @@ main{
     z-index: 1;
 }
 
-.card:hover::after{
+.card:hover .card-bacground {
     opacity: 0.5;
 }
-.card-menu{
+
+.menu-list {
     position: absolute;
+    top: 88px;
+    left: 45px;
+    z-index: 2;
+}
+
+.menu-list-top {
+    font-size: 0;
+    margin-bottom: 8px;
+}
+
+.card-menu:not(:last-child) {
+    margin-right: 8px;
+}
+.card-hover {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.card-menu {
+    cursor: pointer;
     background: none;
     outline: none;
-    top: 0;
-    left: 0;
     opacity: 0;
     z-index: 2;
     border: 1px solid #fff; 
     color: #fff;
+    padding: 0;
+}
+
+.card-menu4 {
+    /* position: absolute; */
+}
+
+.icon1 {
     font-size: 30px;
     padding: 10px 8px 9px 10px;
 }
-.card:hover .card-menu{
+
+.card:hover .card-menu ,.card:hover .menu-list{
     opacity: 1;
 }
 
-.card-menu1{
-    top: 88px;
-    left: 45px;
+.card-hover .card-bacground {
+    opacity: 0.5;  
 }
-.card-menu2{
-    top: 88px;
-    left: 104px;
-}
-.card-menu3{
-    top: 88px;
-    left: 161px;
-}
+
 .card-menu4{
     width: 166px;
     top: 145px;
@@ -297,30 +328,24 @@ a{
     text-align: center;
 }
 
-.prise-item::before{
-    content: '$';
-}
+
 /* prodacts end */
 /* footer */
-footer{
+footer {
+    width: 1600px;
     font-family: 'Roboto', sans-serif;
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
     background: #323232;
-}
-
-
-
-address{
     color: #ffffff;
     text-align: center;
     font-size: 16px;
-    padding-bottom: 31px;
-    padding-top: 33px;
+    padding-bottom: 17px;
+    padding-top: 20px;
     font-style: normal;
 }
 
-address a{
+
+
+footer span{
     color: #1abc9c;
 }
 /* footer end */
