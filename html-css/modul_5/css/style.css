@@ -102,7 +102,6 @@ section {
 
 .slider-items{
     position: absolute;
-    display: inline;
     padding: 5px;
     top: 200px;
     left: 426px;
@@ -238,9 +237,7 @@ section {
     padding: 0;
 }
 
-.card-menu4 {
-    /* position: absolute; */
-}
+
 
 .icon1 {
     font-size: 30px;
