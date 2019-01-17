@@ -34,9 +34,9 @@ header{
 /* nav  */
 nav {
     font-family: 'Roboto', sans-serif;
-    padding: 32px 0 0;
+    padding: 32px 0 22px;
     width: 1110px;
-    margin: 0 auto 22px; 
+    margin: 0 auto;
 }
 .logotipe{
     text-align: left;
@@ -56,7 +56,7 @@ nav {
 
 
 .site-navigation{
-    padding: 8px 0 0;
+    padding: 8px 0 8px;
     float: right;
     margin: 0;
 }
@@ -102,6 +102,7 @@ section {
 
 .slider-items{
     position: absolute;
+    display: inline;
     padding: 5px;
     top: 200px;
     left: 426px;
@@ -129,7 +130,7 @@ section {
     padding: 0; 
     border: none;
     background: rgba(26,188,156,0.65);
-    top: 24px;
+    top: 225px;
 }
 
 .slider-button1 span, .slider-button2 span {
@@ -139,10 +140,10 @@ section {
 }
 
 .slider-button1{
-    left: -182px;
+    left: 244px;
 }
 .slider-button2{
-    right: -183px;
+    right: 244px;
 }
 .slider-button1:focus, .slider-button1:hover , .slider-button2:hover , .slider-button2:focus{
     cursor: pointer;
@@ -153,22 +154,25 @@ section {
 
 /* Products */
 .product-title{
+    position: relative;
     color: #515151;  
     font-weight: 700;  
     text-align: center;
     text-transform: uppercase;
     font-size: 48px;
-    margin: 0 0 79px ;
+    margin: 0px 0 106px;
     letter-spacing: -0.020em;
 }
 
-.product-title::after{
+.product-title::after {
+    position: absolute;
     content: '';
     display: block;
     height: 7px;
-    width: 160px;
+    width: 162px;
     background-color: #1abc9c;
-    margin: 20px auto 0; 
+    top: 78px;
+    left: 719px;
 }
 
 .proucts-item{
@@ -336,15 +340,17 @@ footer {
     font-family: 'Roboto', sans-serif;
     background: #323232;
     color: #ffffff;
-    text-align: center;
-    font-size: 16px;
-    padding-bottom: 17px;
-    padding-top: 20px;
+    padding-bottom: 32px;
+    padding-top: 35px;
     font-style: normal;
 }
 
 
-
+footer p {
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
 footer span{
     color: #1abc9c;
 }
