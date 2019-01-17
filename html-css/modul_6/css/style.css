@@ -3,12 +3,9 @@ body{
 }
 header{
     Font-family: 'Montserrat', sans-serif; 
-    padding: 22px 5px 110px;
+    padding: 22px 5px 113px;
 }
-/* #95e1d3
-#eaffd0
-#fce38a
-#f38181 */
+
 
 .wraper {
     width: 1920px;
@@ -22,7 +19,6 @@ header{
 .logotipe{
     font-weight: bold;
     font-size: 30px;
-    padding-bottom: 3px; 
 }
 nav a{
     text-decoration: none;
@@ -34,7 +30,7 @@ nav{
     justify-content: space-between;
 }
 .site-navigation{
-    padding: 0;
+    padding: 0 0 4px;
     list-style: none;
     margin: 0;
     width: 490px;
@@ -42,33 +38,56 @@ nav{
     justify-content: space-between;
 }
 
+.site-navigation-item:last-child {
+    padding-right: 0;
+}
+
+.site-navigation-item:first-child {
+    padding-left: 0;
+}
+
+.site-navigation-item {
+    padding: 0 27px;
+}
+
 .site-navigation a{
     font-size: 14px;
     text-transform: uppercase;
-    line-height: -1;
+    position: relative;
 }
 
-.site-navigation a:hover{
+.site-navigation-item:hover {
+    cursor: pointer;
+}
+
+.site-navigation-item:hover a{
     color: #f38181;
 }
-.site-navigation a:hover::after{
+.site-navigation-item:hover a::after{
     opacity: 1;
 }
 
 .site-navigation a::after{
     content: '';
     display: block;
-    margin-top: 5px; 
     height: 3px;
     width: 100%;
     background-color: #f38181;
-    opacity: 0; 
+    opacity: 0;
+    position: absolute;
+    top: 25px;
+    left: 0; 
 }
 main
 {
     Font-family: 'Montserrat', sans-serif;
-    padding: 1px 1px 80px;
+    padding: 1px 1px 82px;
 }
+
+.work-with {
+    margin-bottom: 84px;
+}
+
 h2 , h3{
     text-align: center;
     margin-top: 0;
@@ -85,7 +104,8 @@ h2{
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 62px;
+    margin-bottom: 100px;
+    position: relative;
 }
 
 h2::after{
@@ -94,42 +114,73 @@ h2::after{
     background: #f38181;
     width: 60px;
     height: 3px;
-    margin: 36px auto 0;
+    position: absolute;
+    top: 72px;
+    left: 570px;
 }
 
 .services {
     margin: 0 auto;;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    /* justify-content: space-between; */
     align-content: space-between;
-    margin-bottom: 83px;
-    min-height: 245px;
+    min-height: 246px;
+    /* width: 1140px; */
+    /* width: 1270px; */
     padding: 0;
 }
 
 .services-item {
     position: relative;
-    width: 295px;
+    width: 270px;
     list-style: none;
-    padding-left: 40px;
+    padding-left: 60px;
 }
 
 .services-item::before {
     content: '';
     position: absolute;
     display: table;
-    background-image: url(../img/icon1.png);
     height: 32px;
     width: 32px;
     left: 0;
-    top: 0;
+    top: 4px;
 }
+
+
+.services-item1::before {
+    background-image: url(../img/icon1.png);
+}
+
+
+.services-item2::before {
+    background-image: url(../img/icon2.png);
+}
+
+.services-item3::before {
+    background-image: url(../img/icon3.png);
+}
+
+.services-item4::before {
+    background-image: url(../img/icon4.png);
+}
+
+.services-item5::before {
+    background-image: url(../img/icon5.png);
+}
+
+.services-item6::before {
+    background-image: url(../img/icon6.png);
+}
+
 
 .services-item h4 {
     margin: 0 0 10px;
     font-size: 14px;
     text-transform: uppercase;
+    font-weight: normal;
 }
 .services-item p {
     margin: 0;
@@ -140,7 +191,7 @@ h2::after{
 }
 
 .staff h2 {
-    margin-bottom: 40px
+    margin-bottom: 79px
 }
 
 .staff-information {
@@ -164,7 +215,7 @@ h2::after{
     background: #95e1d3;
     width: 380px;
     height: 470px;
-    margin-bottom: 28px; 
+    margin-bottom: 26px; 
 
 }
 .person
@@ -180,7 +231,7 @@ h2::after{
     z-index: 1;
 }
 
-.person , .person-img {
+.person , .person-img{
     transition: 0.2s;
 }
 
@@ -206,6 +257,7 @@ h2::after{
     cursor: pointer;
 }
 .staff-card:hover .social{
+    transition: 0.9s;
     opacity: 1;
 }
 .social{
@@ -213,8 +265,6 @@ h2::after{
     width: 223px;
     justify-content: space-between;
     position: absolute;
-    top: 0;
-    left: 0;
     opacity: 0;
     top: 197px;
     left: 68px;
@@ -259,15 +309,14 @@ h2::after{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px ; 
+    padding: 6px 10px;
     
 
 }
-address{
-    font-style: normal;
+.information p {
     font-size: 14px;
 }
-address a{
+.information span{
     color: #f38181;
     text-decoration: none;
 }
