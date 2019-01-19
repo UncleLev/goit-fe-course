@@ -38,27 +38,13 @@ nav{
     justify-content: space-between;
 }
 
-.site-navigation-item:last-child {
-    padding-right: 0;
-}
-
-.site-navigation-item:first-child {
-    padding-left: 0;
-}
-
-.site-navigation-item {
-    padding: 0 27px;
-}
-
 .site-navigation a{
     font-size: 14px;
     text-transform: uppercase;
     position: relative;
 }
 
-.site-navigation-item:hover {
-    cursor: pointer;
-}
+
 
 .site-navigation-item:hover a{
     color: #f38181;
@@ -124,19 +110,16 @@ h2::after{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* justify-content: space-between; */
     align-content: space-between;
     min-height: 246px;
-    /* width: 1140px; */
-    /* width: 1270px; */
     padding: 0;
 }
 
 .services-item {
     position: relative;
-    width: 270px;
+    width: 290px;
     list-style: none;
-    padding-left: 60px;
+    padding-left: 70px;
 }
 
 .services-item::before {
@@ -145,7 +128,7 @@ h2::after{
     display: table;
     height: 32px;
     width: 32px;
-    left: 0;
+    left: 11px;
     top: 4px;
 }
 
@@ -226,13 +209,13 @@ h2::after{
     right: 0px;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom,#f38181, #fce38a);
+    background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
     opacity: 0;
     z-index: 1;
 }
 
 .person , .person-img{
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .person-img
@@ -248,7 +231,7 @@ h2::after{
 
 
 .staff-card:hover .person{
-    opacity: 0.9;
+    opacity: 1;
 }
 
 .staff-card:hover .person-img , .staff-card:hover .person{
@@ -256,18 +239,15 @@ h2::after{
     right: 10px;
     cursor: pointer;
 }
-.staff-card:hover .social{
-    transition: 0.9s;
-    opacity: 1;
-}
+
 .social{
     display: flex;
     width: 223px;
     justify-content: space-between;
     position: absolute;
-    opacity: 0;
-    top: 197px;
-    left: 68px;
+    /* opacity: 0; */
+    top: 206px;
+    left: 78px;
     z-index: 2;
 }
 
@@ -333,6 +313,7 @@ h2::after{
     width: 230px;
     margin: 0;
     padding: 0;
+    text-indent: 10px;
 }
 .subscribe {
     width: 150px;
@@ -349,7 +330,7 @@ h2::after{
 
 input::placeholder {
     color: #bbbbbb;
-    text-indent: 10px;
+    
     font-style: italic;
 
 }
