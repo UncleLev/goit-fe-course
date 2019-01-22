@@ -1,0 +1,394 @@
+body{
+    margin: 0px;
+}
+header{
+    Font-family: 'Montserrat', sans-serif; 
+    padding: 22px 5px 113px;
+    background-image: url(../img/promo-back-min.jpg); 
+    height: 864px;
+}
+
+
+.wraper {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.logotipe{
+    font-weight: bold;
+    font-size: 30px;
+}
+header a{
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navigation{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 152px;
+}
+
+
+
+.site-navigation{
+    padding: 14px 0 4px;
+    list-style: none;
+    margin: 0;
+    width: 618px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-navigation a{
+    font-size: 14px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+
+
+.site-navigation-item:hover a{
+    color: #fce38a;
+}
+.site-navigation-item:hover a::after{
+    opacity: 1;
+}
+
+.site-navigation a::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #fce38a;
+    opacity: 0;
+    position: absolute;
+    top: 25px;
+    left: 0; 
+}
+
+.header-pretitle, .header-title {
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+}
+
+.header-pretitle {
+    
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    margin-bottom: 26px;
+    text-transform: none;
+}
+
+.header-title {
+    text-transform: uppercase;
+    font-size: 150px;
+    letter-spacing: -9px;
+    line-height: 105pt;
+    margin-bottom: 110px;
+}
+
+.more {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    border: solid 3px #ffffff;
+    color: #ffffff;
+    background: none;
+    display: block;
+    margin: 0 auto;
+    width: 160px;
+    height: 40px;
+}
+
+main
+{
+    Font-family: 'Montserrat', sans-serif;
+    padding: 42px 1px 82px;
+}
+
+.work-with {
+    margin-bottom: 84px;
+}
+
+h2 , h3{
+    text-align: center;
+    margin-top: 0;
+
+}
+
+h3
+{
+    font-size: 24px;
+    margin-bottom: 9px;
+    font-family: 'Kaushan Script', cursive;
+}
+h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+h2::after{
+    content: '';
+    display: block;
+    background: #f38181;
+    width: 60px;
+    height: 3px;
+    position: absolute;
+    top: 72px;
+    left: 570px;
+}
+
+.services {
+    margin: 0 auto;;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    min-height: 246px;
+    padding: 0;
+}
+
+.services-item {
+    position: relative;
+    width: 290px;
+    list-style: none;
+    padding-left: 70px;
+}
+
+.services-item::before {
+    content: '';
+    background-repeat: no-repeat;
+    position: absolute;
+    display: table;
+    height: 32px;
+    width: 32px;
+    left: 11px;
+    top: 4px;
+}
+
+
+.services-item1::before {
+    background-image: url(../img/icon1.png);
+}
+
+
+.services-item2::before {
+    background-image: url(../img/icon2.png);
+}
+
+.services-item3::before {
+    background-image: url(../img/icon3.png);
+}
+
+.services-item4::before {
+    background-image: url(../img/icon4.png);
+}
+
+.services-item5::before {
+    background-image: url(../img/icon5.png);
+}
+
+.services-item6::before {
+    background-image: url(../img/icon6.png);
+}
+
+
+.services-item h4 {
+    margin: 0 0 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.services-item p {
+    margin: 0;
+    font-size: 15px;
+    color: #999999;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.staff h2 {
+    margin-bottom: 79px
+}
+
+.staff-information {
+    text-align: center;
+    font-size: 15px;
+    color: #999999;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+    width: 952px;
+    margin: 0 auto 89px auto;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+}
+
+.staff-card{
+    position: relative;
+    background: #95e1d3;
+    width: 380px;
+    height: 470px;
+    margin-bottom: 26px; 
+
+}
+.person
+{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+    opacity: 0;
+    z-index: 1;
+}
+
+.person , .person-img{
+    transition: 0.4s;
+}
+
+.person-img
+{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.staff-card:hover .person{
+    opacity: 1;
+}
+
+.staff-card:hover .person-img , .staff-card:hover .person{
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.social{
+    display: flex;
+    width: 223px;
+    justify-content: space-between;
+    position: absolute;
+    /* opacity: 0; */
+    top: 206px;
+    left: 78px;
+    z-index: 2;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    width: 55px;
+    background: #fce38a;
+}
+
+
+.icon:hover{
+    cursor: pointer;
+    background: #95e1d3;
+}
+
+.name {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+.job {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: #999999;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0;
+}
+
+footer{
+    Font-family: 'Montserrat', sans-serif; 
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px ;
+    
+
+}
+footer p {
+    font-size: 14px;
+    margin: 0;
+    padding: 14px 0;
+}
+footer span{
+    color: #f38181;
+    text-decoration: none;
+}
+.subscribing{
+    display: flex;
+
+}
+.subscribing input[type="email"]{
+    border: 1px solid #e5e5e5;
+    border-right: none;
+    height: 40px;
+    font-size: 15px;
+    width: 230px;
+    padding: 0;
+    text-indent: 10px;
+    outline: none;
+
+}
+.subscribe {
+    width: 150px;
+    background: #95e1d3;
+    text-transform: uppercase;
+    border-color: transparent;
+    font-size:14px;
+    color: #ffffff;
+    padding: 10px 18px;
+    outline: none;
+    font-weight: bold;
+}
+
+.subscribe:hover {
+    cursor: pointer;
+}
+
+
+input::placeholder {
+    color: #bbbbbb;
+    
+    font-style: italic;
+
+}
+
+
+
+
+

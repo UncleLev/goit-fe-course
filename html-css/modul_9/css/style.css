@@ -1,162 +1,185 @@
-@font-face {
-    font-family: 'RobotoSlab';
-    src: url('../font/roboto-slab-v7-latin/roboto-slab-v7-latin-regular.woff2') format('woff2'),
-         url('../font/roboto-slab-v7-latin/roboto-slab-v7-latin-regular.woff2') format('woff');
-    font-weight: 400;
-    font-style: normal;
+body {
+    margin: 0;
 }
 
 @font-face {
-    font-family: 'Wisdom';
-    src: url('../font/WisdomScriptAJ/WisdomScriptAJ.woff2') format('woff2'),
-            url('../font/WisdomScriptAJ/WisdomScriptAJ.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-font-family: 'Montserrat';
-src: url('../font/montserrat-v12-latin/montserrat-v12-latin-regular.woff2') format('woff2'),
+    font-family: 'Montserrat';
+    src: url('../font/montserrat-v12-latin/montserrat-v12-latin-regular.woff2') format('woff2'),
         url('../font/montserrat-v12-latin/montserrat-v12-latin-regular.woff') format('woff');
-font-weight: normal;
-font-style: normal;
-}
-
-@font-face {
-font-family: 'Montserrat';
-src: url('../font/montserrat-v12-latin/montserrat-v12-latin-700.woff2') format('woff2'),
-        url('../font/montserrat-v12-latin/montserrat-v12-latin-700.woff') format('woff');
-font-weight: 700;
-font-style: normal;
-}
-
-@font-face {
-    font-family: 'DroidSerif';
-    src: url('../font/droidserif/droidserifitalic.woff2') format('woff2'),
-            url('../font/droidserif/droidserifitalic.woff') format('woff');
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
-
-body{
-    margin: 0;
-    padding: 0;
-    width: 1400px;
-}
-header{
-    padding: 26px 5px 113px;
-}
-/* #95e1d3
-#eaffd0
-#fce38a
-#f38181 */
-
-.wraper {
-    width: 1400px;
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/montserrat-v12-latin/montserrat-v12-latin-700.woff2') format('woff2'),
+        url('../font/montserrat-v12-latin/montserrat-v12-latin-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
 }
 
-.container{
-    width: 940px;
-    margin: 0 auto;
-
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    
+    src:    url('../font/roboto-v18-latin/roboto-v18-latin-regular.woff2') format('woff2'), 
+            url('../font/roboto-v18-latin/roboto-v18-latin-regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
 }
-.logotipe{
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 30px;
-    color: #fed136;
-    font-family: 'Wisdom';
+/* roboto-700 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 300;
-
+    src:    url('../font/roboto-v18-latin/roboto-v18-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../font/roboto-v18-latin/roboto-v18-latin-300.woff') format('woff'); /* Modern Browsers */
 }
-nav{
+
+/* header */
+
+header {
+    background-color: #1a1915;
     margin: 0 auto;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-nav a{
-    text-decoration: none;
-    color: #000000;
-}
-.site-navigation{
-    Font-family: 'Montserrat'; 
-    padding: 0;
-    list-style: none;
-    margin: 0;
-    width: 480px;
-    display: flex;
-    justify-content: space-between;
 }
 
-.site-navigation a{
-    font-size: 14px;
-    text-transform: uppercase;
+header h2 , header button , .partners h3, .show-patners {
+    font-family: 'Montserrat';
+    
+}
+ h2 {
     font-weight: bold;
 }
 
-.site-navigation a:hover {
-    color: #fed136;
-}
-
-main
-{
-    padding: 5px;
-}
-
-.services{
-}
-
-.services h2 {
-    Font-family: 'Montserrat'; 
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 40px;
-    margin: 0;    
-}
-
-.services h4 {
-    font-family: 'DroidSerif';
-    font-size: 14px;
-    color: #777777;
-    text-align: center;
-    margin: 0;
+header h3, .partners p {
+    font-family: 'Roboto';
     font-weight: 300;
-} 
-
-.services-list {
-    display: flex;
-    /* flex-wrap: wrap */
-    justify-content: space-between;
-
-}
-
-.services-item {
-    width: 290px;
-    text-align: center;
-
-}
-
-.services-item h3 {
-    Font-family: 'Montserrat'; 
-    font-size: 18px;
-}
-
-.services-item p {
-    font-family: 'RobotoSlab';
-    color: #777777;
-    font-size: 14px;
     
 }
 
-.contact {
-    background-color: #222222;
+nav {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding-top: 20px;
+}
+.entering{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 155px;
+    justify-content: space-between;
+}
+
+.entering a{
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 
 
 
+.signing{
+    border: 2px solid #ffffff;
+    border-radius: 19px;
+    padding: 7px 15px !important;
+}
+
+.entering li{
+    padding-top: 10px; 
+
+}
+.logo {
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-size: 20px;
+}
+
+header h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+}
+header h3 {
+    color: #ffffff;
+    margin: 0;
+}
+
+button:hover , button:active {
+    outline: none;
+    cursor: pointer;
+}
+
+.finding {
+    display: block;
+    color: #ffffff;
+    background-color: #ff4e50;
+    border: 2px solid #ff4e50;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50px;
+    margin: 0 auto;
+    padding:  7px;    
+}
+
+/* header */
 
 
 
+section h3{
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+
+
+.partner-photo{
+    position: relative;
+    width: 128px;
+    height: 128px;
+    margin: 0 auto 12px;
+}
+
+.avatar{
+    display: block;
+    width: 121px;
+    margin: 0 auto;
+}
+
+.icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.partners-item p, .partners-item h3 {
+    text-align: center;
+}
+
+
+
+.partners-item h3 {
+    margin: 0 0 15px;
+}
+
+.partners-item p {
+    color: #666666;
+    margin: 0;
+}
+
+
+
+.show-patners {
+    display: block;
+    color: #ff4e50;
+    background-color: #ffffff;
+    border: 2px solid #ff4e50;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50px;
+    margin: 0 auto;
+    width: 270px;
+    padding: 10px 5px;
+}
