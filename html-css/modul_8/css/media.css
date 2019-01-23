@@ -2,11 +2,7 @@
     
     .header-backgroud {
         height: 540px;
-        background-image: url(../img/desktop.png) ;
-        /* width: 320px; */
-        width: 100%;
-        /* background-repeat: no-repeat; */
-        margin: 0 auto;      
+             
     }
 
     .entering {
@@ -70,9 +66,7 @@
 @media (min-width: 768px) {
     .header-backgroud {
         height: 700px;
-        /* background-image: url(../img/desktop.png) ; */
-        /* width: 768px; */
-        /* width: 100%; */
+        
     }    
     
     nav {
@@ -162,7 +156,6 @@
 
 @media (min-width: 1440px) {
     .header-backgroud {
-        /* background-image: url(../img/desktop.png) ; */
         width: 1440px;
             
     }

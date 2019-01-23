@@ -40,7 +40,6 @@ body {
 
 header {
     background-color: #1a1915;
-    margin: 0 auto;
 }
 
 header h2 , header button , .partners h3, .show-patners {
@@ -74,7 +73,12 @@ nav {
     text-decoration: none;
 }
 
-
+.header-backgroud {
+    background-image: url(../img/desktop.png) ;
+    width: 100%;
+    margin: 0 auto;
+    background-position: center; 
+}
 
 
 .signing{
