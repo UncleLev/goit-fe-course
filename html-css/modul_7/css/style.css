@@ -160,14 +160,11 @@ main
 
 
 .contact-background-img {
-    /* display: flex; */
     min-width: 1400px;
     background-position: right bottom;
     background-image: url(../img/Map-Image.png);
     background-repeat: no-repeat;
     background-color: #222222;
-    
-    /* order: 3; */
 }
 .сontact-background {
     padding-top: 100px; 
@@ -214,11 +211,9 @@ input[type="text"] , input[type="email"], textarea {
     text-indent: 20px;
     Font-family: 'Montserrat'; 
     font-weight: bold;
+    border: transparent;
 }
 
-textarea {
-    padding-top: 15px;
-}
 
 .input-inf {
     display: flex;
@@ -231,9 +226,11 @@ input, textarea, form button{
     border-radius: 3px; 
 }
 textarea {
+    padding-top: 15px;
     width: 450px;
     height: 195px;
     resize: none;
+    border: transparent;
 }
 
 form {
@@ -263,10 +260,16 @@ input[type="submit"]:hover {
 input[type="submit"]:active {
     cursor: pointer;
     background: #f7dd7f;
-    outline: none;
-    
+    outline: none;  
 }
 
+.name:valid, .email:valid, .message:valid {
+    outline-color: #129719;
+}
+
+.name:invalid, .email:invalid, .message:invalid {
+    outline-color: #c90b0b;
+}
 
 
 
