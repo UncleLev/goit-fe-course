@@ -261,13 +261,18 @@ input[type="submit"]:active {
 }
 
 .name:valid, .email:valid, .message:valid {
-    outline-color: #129719;
+    border: 1px solid #129719;
 }
 
 .name:invalid, .email:invalid, .message:invalid {
-    outline-color: #c90b0b;
+    border: 1px solid #c90b0b;
 }
 
+
+input[type="text"]:focus, .email:focus, .message:focus {
+    outline: transparent;
+    
+}
 
 
 
