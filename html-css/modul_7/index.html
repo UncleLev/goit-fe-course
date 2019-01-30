@@ -24,46 +24,38 @@
         <main class="">
             <section class="services ">
                 <div class="container">
-
                     <h2>services</h2>
                     <h4>Proin iaculis purus consequat sem cure.</h4>
                     <div class="services-list">
-                        <div class="services-item">
-                            <img src="./img/Icon-Basket.png" alt="#">
+                        <div class="services-item services-item1">
                             <h3>E-Commerce</h3>
                             <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
                         </div>
-                        <div class="services-item">
-                            <img src="./img/Icon-Laptop.png" alt="#">
+                        <div class="services-item services-item2">
                             <h3>Responsive Web</h3>
                             <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
                         </div>
-                        <div class="services-item">
-                            <img src="./img/Icon-Locked.png" alt="#">
+                        <div class="services-item services-item3">
                             <h3>Web Security</h3>
                             <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
                         </div>
                     </div>
                 </div>
             </section>    
-            <section class=" contact-background-img">
-                <div class="сontact-background">
-                        <div class="contact">
-                            <h2>contact us</h2>
-                            <h4>Proin iaculis purus consequat sem cure.</h4>
-                            <form action="#" method="get" class="container">
-                                <div class="inputing">
-                                    <div class="input-inf">
-                                        <input class="name" minlength="2" maxlength="60" type="text" name="name" required placeholder="Your Name *">
-                                        <input class="email" type="email" name="email" required placeholder="Your E-mail *">
-                                        <input type="text" minlength="2" maxlength="60" name="subject" placeholder="Subject">
-                                    </div>
-                                    <textarea class="message" minlength="5" maxlength="150" name="message" required placeholder="Your Message *"></textarea>
-                                </div>
-                                <input type="submit" value="sent message">
-                            </form>
+            <section class=" contact">
+                <h2>contact us</h2>
+                <h4>Proin iaculis purus consequat sem cure.</h4>
+                <form action="#" method="get" class="container">
+                    <div class="inputing">
+                        <div class="input-inf">
+                            <input class="name"  minlength="2" maxlength="60" type="text" name="name" required placeholder="Your Name *" onkeyup="this.setAttribute('value', this.value); "value="">
+                            <input class="email" value="" type="email" name="email" required placeholder="Your E-mail *" onkeyup="this.setAttribute('value', this.value); "value="">
+                            <input type="text" minlength="2" maxlength="60" name="subject" placeholder="Subject">
                         </div>
-                </div>
+                        <textarea class="message" value="" minlength="5" maxlength="150" name="message" required placeholder="Your Message *" onkeyup="this.setAttribute('value', this.value); "value=""></textarea>
+                    </div>
+                    <input type="submit" value="sent message">
+                </form>
             </section>
         </main>
 </body>

@@ -41,7 +41,6 @@ font-style: normal;
 
 body{
     margin: 0;
-    padding: 0;
 }
 header{
     padding: 36px 5px 113px;
@@ -137,7 +136,31 @@ main
 .services-item {
     width: 290px;
     text-align: center;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 92px;
+}
 
+.services-item::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 73px;
+    height: 74px;
+    top: 0;
+    left: 106px;
+}
+
+.services-item1::before {
+    background-image: url(../img/Icon-Basket.png);
+}
+
+.services-item2::before {
+    background-image: url(../img/Icon-Laptop.png);
+}
+
+.services-item3::before {
+    background-image: url(../img/Icon-Locked.png);
 }
 
 .services-item h3 {
@@ -158,23 +181,17 @@ main
 
 
 
-.contact-background-img {
+.contact {
     min-width: 1400px;
     background-position: right bottom;
     background-image: url(../img/Map-Image.png);
     background-repeat: no-repeat;
     background-color: #222222;
-}
-.сontact-background {
+    margin: 0 auto;
     padding-top: 100px; 
     padding-bottom: 115px;
 }
 
-
-.contact {
-    width: 1400px;
-    margin: 0 auto;
-}
 
 .contact h2{
     color: #ffffff;
@@ -195,7 +212,8 @@ main
 input { 
     width: 100%;
     height: 49px;
-    font-size: 14px;    
+    font-size: 14px; 
+    border: 1px solid #ffffff;
 }
 
 input::placeholder, textarea::placeholder {
@@ -209,7 +227,6 @@ input[type="text"] , input[type="email"], textarea {
     text-indent: 20px;
     Font-family: 'Montserrat'; 
     font-weight: bold;
-    border: transparent;
 }
 
 
@@ -221,13 +238,14 @@ input[type="text"] , input[type="email"], textarea {
 }
 input, textarea, form button{
     overflow: hidden;
-    border-radius: 3px; 
+    border-radius: 3px;
 }
 textarea {
     padding-top: 17px;
     width: 453px;
     height: 191px;
     resize: none;
+    border: 1px solid #ffffff;
 }
 
 form {
@@ -260,19 +278,23 @@ input[type="submit"]:active {
     outline: none;  
 }
 
-.name:valid, .email:valid, .message:valid {
-    border: 1px solid #129719;
-}
-
-.name:invalid, .email:invalid, .message:invalid {
-    border: 1px solid #c90b0b;
-}
 
 
 input[type="text"]:focus, .email:focus, .message:focus {
     outline: transparent;
     
 }
+.name:valid, .email:valid, .message:valid {
+    border: 1px solid #129719;
+}
 
+.name:not([value=""]):not(:focus):invalid  {
+    border: 1px solid #c90b0b;
+}
 
-
+.message:not([value=""]):not(:focus):invalid {
+    border: 1px solid #c90b0b;
+}
+.email:not([value=""]):not(:focus):invalid {
+    border: 1px solid #c90b0b;
+}
