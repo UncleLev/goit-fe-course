@@ -65,10 +65,13 @@ nav {
     justify-content: space-between;
 }
 
+a {
+    text-decoration: none;
+}
+
 .entering a{
     font-size: 14px;
     color: #ffffff;
-    text-decoration: none;
     border-radius: 19px;
     padding: 7px 15px ;
     border: 2px solid transparent;
@@ -103,6 +106,7 @@ header {
     font-weight: bold;
     letter-spacing: 0.05em;
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 header h2 {
