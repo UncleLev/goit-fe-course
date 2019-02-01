@@ -1,6 +1,6 @@
 @media (min-width: 320px) {
     
-    .header-backgroud {
+    header {
         height: 540px;
              
     }
@@ -64,7 +64,7 @@
 }
 
 @media (min-width: 768px) {
-    .header-backgroud {
+    header {
         height: 700px;
         
     }    
@@ -73,7 +73,7 @@
         display: flex;
         justify-content: space-between;
         width: 87.239583333333333333333333333333%;
-        margin: 0 auto 143px;
+        margin: 0 auto 145px;
         padding-top: 37px;
     }
     
@@ -144,8 +144,10 @@
         margin: 0 !important;
     }
 
-   
-       
+    .partners-item P {
+        width: 100%;
+    }
+
     .show-patners {
         width: 190px;
     }
@@ -153,10 +155,10 @@
 
 
 @media (min-width: 1440px) {
-    .header-backgroud {
+    /* .header-backgroud {
         width: 1440px;
             
-    }
+    } */
     
     nav {
         width: 940px;
@@ -174,6 +176,7 @@
 
     .partners{
         width: 940px;
+        min-height: 0;
     }
 
     .partner-photo {
