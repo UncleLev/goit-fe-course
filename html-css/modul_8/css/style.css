@@ -40,7 +40,7 @@ body {
 
 
 
-header h2 , header button , .partners h3, .show-patners {
+header h1 , header button , .partners h3, .show-patners {
     font-family: 'Montserrat';
     
 }
@@ -69,16 +69,17 @@ a {
     text-decoration: none;
 }
 
-.entering a{
+.entering button{
     font-size: 14px;
     color: #ffffff;
     border-radius: 19px;
     padding: 7px 15px ;
+    background: none;
     border: 2px solid transparent;
 
 }
 
-.entering a:hover {
+.entering button:hover {
     border: 2px solid #ffffff;
     border-radius: 19px;
     padding: 7px 15px ;
@@ -109,7 +110,7 @@ header {
     text-transform: uppercase;
 }
 
-header h2 {
+header h1 {
     color: #ffffff;
     text-transform: uppercase;
     margin: 0;

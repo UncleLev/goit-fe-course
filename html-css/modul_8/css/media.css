@@ -1,8 +1,7 @@
 @media (min-width: 320px) {
     
     header {
-        height: 540px;
-             
+        padding-bottom: 140px;
     }
 
     .entering {
@@ -18,7 +17,7 @@
         text-align: center;
     }
     
-    header h2 {
+    header h1 {
         margin-bottom: 12px; 
         text-align: center;
         font-size: 30px;
@@ -48,10 +47,10 @@
         margin-bottom: 28px;
     }
     .partners-item{
-        margin: 0 auto;
+        margin: 0 auto 26px;
     }
-    .partners-item:not(:last-child) {
-        margin-bottom:  26px;
+    .partners-item:last-child {
+        margin-bottom:  0;
     }
     .partners-item h3{
         font-size: 14px;
@@ -66,8 +65,7 @@
 
 @media (min-width: 768px) {
     header {
-        height: 700px;
-        
+        padding-bottom: 234px;
     }    
     
     nav {
@@ -89,7 +87,7 @@
         letter-spacing: 0.01em;
     }
 
-    header h2 {
+    header h1 {
         font-size: 52px;
         margin: 0 auto 25px;
         line-height: 1.2em;
@@ -142,7 +140,7 @@
 
     .partners-item{
         width: 236px;
-        margin: 0 !important;
+        margin: 0;
     }
 
     .partners-item P {
@@ -156,10 +154,9 @@
 
 
 @media (min-width: 1440px) {
-    /* .header-backgroud {
-        width: 1440px;
-            
-    } */
+    header {
+        width: 100%;
+    }
     
     nav {
         width: 940px;
@@ -177,7 +174,7 @@
 
     .partners{
         width: 940px;
-        min-height: 0;
+        min-height: 233px;
     }
 
     .partner-photo {
