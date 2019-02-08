@@ -38,17 +38,11 @@ body {
 
 /* header */
 
-header {
-    background-color: #1a1915;
-    margin: 0 auto;
-}
 
-header h2 , header button , .partners h3, .show-patners {
+
+header h1 , header button , .partners h3, .show-patners {
     font-family: 'Montserrat';
     
-}
- h2 {
-    font-weight: bold;
 }
 
 header h3, .partners p {
@@ -61,30 +55,50 @@ nav {
     font-family: 'Montserrat';
     font-weight: bold;
     padding-top: 20px;
+    line-height: 1.15;
 }
 .entering{
     list-style: none;
     display: flex;
     padding: 0;
     margin: 0;
-    width: 155px;
+    width: 170px;
     justify-content: space-between;
 }
 
-.entering a{
-    font-size: 14px;
-    color: #ffffff;
+a {
     text-decoration: none;
 }
 
+.entering button{
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 19px;
+    padding: 7px 15px ;
+    background: none;
+    border: 2px solid transparent;
 
+}
 
-
-.signing{
+.entering button:hover {
     border: 2px solid #ffffff;
     border-radius: 19px;
-    padding: 7px 15px !important;
+    padding: 7px 15px ;
 }
+
+
+
+
+header {
+    background-image: url(../img/desktop.jpg) ;
+    width: 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+
 
 .entering li{
     padding-top: 10px; 
@@ -95,16 +109,17 @@ nav {
     font-weight: bold;
     letter-spacing: 0.05em;
     font-size: 20px;
+    text-transform: uppercase;
 }
 
-header h2 {
+header h1 {
     color: #ffffff;
     text-transform: uppercase;
     margin: 0;
+    font-weight: bold;
 }
 header h3 {
     color: #ffffff;
-    margin: 0;
 }
 
 button:hover , button:active {
@@ -121,16 +136,17 @@ button:hover , button:active {
     font-weight: bold;
     border-radius: 50px;
     margin: 0 auto;
-    padding:  7px;    
+    padding: 10px 7px;    
 }
 
 /* header */
 
 
 
-section h3{
+section h2{
     font-family: 'Montserrat';
     text-align: center;
+    font-weight: bold;
 }
 
 
@@ -142,17 +158,41 @@ section h3{
     margin: 0 auto 12px;
 }
 
+
 .avatar{
     display: block;
     width: 121px;
     margin: 0 auto;
 }
 
-.icon {
+.partner-photo::before {
     position: absolute;
+    content: '';
+    display: block;
+    width: 41px;
+    height: 41px;
     right: 0;
-    bottom: 0;
+    bottom: 3px;
 }
+
+.partner-photo1::before {
+    background-image: url(../img/icon1.png);
+}
+
+.partner-photo2::before {
+    background-image: url(../img/icon2.png);
+}
+
+.partner-photo3::before {
+    background-image: url(../img/icon3.png);
+}
+
+.partner-photo4::before {
+    background-image: url(../img/icon4.png);
+}
+
+
+
 
 .partners-item p, .partners-item h3 {
     text-align: center;
@@ -162,11 +202,13 @@ section h3{
 
 .partners-item h3 {
     margin: 0 0 15px;
+    font-weight: bold;
 }
 
 .partners-item p {
     color: #666666;
     margin: 0;
+    line-height: 1.27em;
 }
 
 
@@ -182,4 +224,8 @@ section h3{
     margin: 0 auto;
     width: 270px;
     padding: 10px 5px;
+}
+
+button:focus {
+    outline: none;
 }
