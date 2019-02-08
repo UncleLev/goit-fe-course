@@ -66,9 +66,11 @@ nav {
     justify-content: space-between;
 }
 
-a {
-    text-decoration: none;
+a:focus , a:hover, a {
+    text-decoration: none;    
+    color: #fff;
 }
+
 
 .entering button{
     font-size: 14px;
