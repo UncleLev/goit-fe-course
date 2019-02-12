@@ -72,6 +72,8 @@
         justify-content: space-between;
         margin: 0 auto 145px;
         padding-top: 37px;
+        width: 87.239583333333333333333333333333%;
+
     }
     
     .entering {
@@ -113,7 +115,7 @@
     .partners{
         display: flex;
         flex-wrap: wrap;
-        max-height: 498px;
+        min-height: 498px;
         align-content: space-between;
         justify-content: space-between;
         margin: 0 auto 33px;
