@@ -44,11 +44,25 @@ const sorry = 'Извините, столько мест нет ни в одно
 
 let count = 0;//змінна зберігання кількості місць
 
-count = Number(prompt('Введите сколько вам нужно мест'));
+count = prompt('Введите сколько вам нужно мест');
 
 
-if (count != 0) { //перевірка на нажатя відмінни
-    if (Number.isInteger(count)) { //превірка чи число int чи float
+// alert(otac);
+
+// if (count > 0 && Number.isInteger(count)) {
+//     alert('da');
+// } else {
+//     alert(error);
+// }
+// let a = '5';
+// let  b = 0;
+// a = Number(a);
+// alert(typeof a);
+
+
+if (count != null) { //перевірка на нажатя відмінни
+    count = Number(count);
+    if (count > 0 && Number.isInteger(count)) { //превірка чи число int чи float
         if (count <= taba) { // перевірка на кількість місць
             if (confirm('Вам подходит Таба?')) { //перевірка на збіг з кількістю місць
                 alert(yep + 'Таба');
