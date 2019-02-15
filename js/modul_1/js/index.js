@@ -47,19 +47,6 @@ let count = 0;//змінна зберігання кількості місць
 count = prompt('Введите сколько вам нужно мест');
 
 
-// alert(otac);
-
-// if (count > 0 && Number.isInteger(count)) {
-//     alert('da');
-// } else {
-//     alert(error);
-// }
-// let a = '5';
-// let  b = 0;
-// a = Number(a);
-// alert(typeof a);
-
-
 if (count != null) { //перевірка на нажатя відмінни
     count = Number(count);
     if (count > 0 && Number.isInteger(count)) { //превірка чи число int чи float
