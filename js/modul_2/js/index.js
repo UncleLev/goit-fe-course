@@ -11,18 +11,21 @@ let i = 0;
 do {
 
     userInput = prompt('введите число'); //введення числа
-    
     if (userInput != null) { //перевірка на відмінну
+        if(Number(userInput)) { //перевірка на числа
 
-        numbers[i] = Number(userInput);
-        i += 1; 
+            numbers[i] = Number(userInput);
+            i += 1; 
+        
+        } else {
+            alert('Были введены буквы');
+        }
     
     } else {
-
         alert('Отмена');
         exit = false;
-    
     }
+    
 } while (exit);
 
 if (numbers[0] != undefined) { //перевірка на пустоту масиву
