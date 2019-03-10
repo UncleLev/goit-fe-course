@@ -16,10 +16,10 @@ function Cashier(name, productDatabase) {
   this.getCustomerMoney = function (value) {
     this.customerMoney = value;
   }
-  this.countTotalPrice = function (Object) {
+  this.countTotalPrice = function (myObj) {
     let total = 0;
-    for(let key in Object) {
-      total += Object[key] * productDatabase[key];
+    for(let key in myObj) {
+      total += myObj[key] * productDatabase[key];
     }
     return total;
   }
