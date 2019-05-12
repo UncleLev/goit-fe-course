@@ -115,6 +115,7 @@ const galleryItems = [{
 
 /* Далее плагин работает в автономном режиме */
 
+
 const imageGallery = document.querySelector('.image-gallery');
 const fullview = document.querySelector('.fullview');
 const preview = document.querySelector('.preview');
