@@ -133,4 +133,5 @@ const handleClick = event => {
     fullview.children[0].setAttribute('src', source.fullview);
     fullview.children[0].setAttribute('alt', source.alt);
 };
+
 preview.addEventListener("click", handleClick);
