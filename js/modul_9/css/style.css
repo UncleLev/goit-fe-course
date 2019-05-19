@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent {
+    width: 500px;
+    margin: 0 auto;
+}
+.stopwatch {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    width: 500px;
+    margin: 0 auto 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    display: inline-flexbox;
+    padding: 16px 32px;
+    width: 150px;
+    border: none;
+    margin: 0 4px;
+    align-content: center;
+    border-radius: 2px;
+    font-size: 16px;
+    outline: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: inherit;
+    background-color: #64c04d;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.btn:disabled {
+    background: #505050;
+}
+
+.btn:active {
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.time {
+    text-align: center;
+    font-size: 140px;
+} 
+.laps{
+} 
+.laps__item{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+.laps__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.pause {
+    background: #fa9b2e;
+}
