@@ -104,15 +104,14 @@ class Stopwatch {
                         this.sec = 0;
                         this.min++;
                     }
-                    if (this.sec >= 10 && this.min < 10){
+                    if (this.sec >= 10 && this.min < 10) {
                         this.timeView.textContent = `0${this.min}:${this.sec}.${this.ms/100 | 0}`;
-                    } else if(this.sec >= 10 && this.min >= 10) {
-                        this.timeView.textContent = `${this.min}:${this.sec}.${this.ms/100 | 0}`;                        
-                    } else if(this.sec < 10 && this.min >= 10) {
-                        this.timeView.textContent = `${this.min}:0${this.sec}.${this.ms/100 | 0}`;                        
-                    }
-                    else {
-                        this.timeView.textContent = `0${this.min}:0${this.sec}.${this.ms/100 | 0}`;                        
+                    } else if (this.sec >= 10 && this.min >= 10) {
+                        this.timeView.textContent = `${this.min}:${this.sec}.${this.ms/100 | 0}`;
+                    } else if (this.sec < 10 && this.min >= 10) {
+                        this.timeView.textContent = `${this.min}:0${this.sec}.${this.ms/100 | 0}`;
+                    } else {
+                        this.timeView.textContent = `0${this.min}:0${this.sec}.${this.ms/100 | 0}`;
                     }
                 }, 100);
             } else {
@@ -124,7 +123,6 @@ class Stopwatch {
             }
         });
         this.btnLap.addEventListener('click', () => {
-
             this.lapsList.innerHTML += `<li class="laps__item" type="1">${this.min}:${this.sec}.${this.ms}</li>`
         });
         this.btnReset.addEventListener('click', () => {
@@ -137,6 +135,7 @@ class Stopwatch {
             this.btnStart.textContent = 'Start';
             this.pause = false;
             clearInterval(this.timer);
+            this.btnStart.classList.remove('pause');
 
             while (this.lapsList.firstChild) {
                 this.lapsList.removeChild(this.lapsList.firstChild)
