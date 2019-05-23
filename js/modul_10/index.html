@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Modul_</title>
+    <title>Modul_10</title>
 </head>
+<header class="header container">
+    <nav class="nav ">
+        <button class="nav__item btn btn--active" id="AllUser">Show all users</button>
+        <button class="nav__item btn" id="ShowId">Show user by id</button>
+        <button class="nav__item btn" id="AddUser">Add user</button>
+        <button class="nav__item btn" id="RemoveUser">Remove user</button>
+        <button class="nav__item btn" id="UpdateUser">Update user</button>
+    </nav>
+</header>
+
 <body>
+
+    <div class="container">
+
+        <div class="forms">
+            <form class="search-form search-form--active" id="FormAll">
+                <button class="mdc-btn btn" type="submit">Show all users</button>
+            </form>
+            <form class="search-form" id="FormById">
+                <input type="text" name="country" placeholder="Enter user id">
+                <button class="mdc-btn btn" type="submit">Get</button>
+            </form>
+            <form class="search-form" id="FormAd">
+                <input type="text" name="country" placeholder="Enter user Name">
+                <input type="number" name="country" placeholder="Enter user Age">
+                <button class="mdc-btn btn" type="submit">Add</button>
+            </form>
+            <form class="search-form" id="FormRemove">
+                <input type="text" name="country" placeholder="Enter user id">
+                <button class="mdc-btn btn" type="submit">Remove</button>
+            </form>
+            <form class="search-form" id="FormUpdate">
+                <input type="text" name="country" placeholder="Enter user id">
+                <input type="text" name="country" placeholder="Enter user Name">
+                <input type="number" name="country" placeholder="Enter user Age">
+                <button class="mdc-btn btn" type="submit">Update</button>
+            </form>
+        </div>
+        <ul class="result"></ul>
+    </div>
+
     <script src="./js/index.js"></script>
 </body>
+
 </html>
