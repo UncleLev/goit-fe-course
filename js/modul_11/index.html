@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,70 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Modul_</title>
 </head>
+
 <body>
+    <form class="form js-form">
+        <section>
+            <h2>Screen size</h2>
+            <ul id="size">
+                <li><label><input type="checkbox" name="size" value="13"> 13"</label></li>
+                <li><label><input type="checkbox" name="size" value="15"> 15"</label></li>
+                <li><label><input type="checkbox" name="size" value="17"> 17"</label></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Color</h2>
+            <ul id="color">
+                <li><label><input type="checkbox" name="color" value="white"> white</label></li>
+                <li><label><input type="checkbox" name="color" value="gray"> gray</label></li>
+                <li><label><input type="checkbox" name="color" value="black"> black</label></li>
+            </ul>
+        </section>
+        <section>
+            <h2>Release date</h2>
+            <ul id="release_date">
+                <li><label><input type="checkbox" name="release_date" value="2015"> 2015</label></li>
+                <li><label><input type="checkbox" name="release_date" value="2016"> 2016</label></li>
+                <li><label><input type="checkbox" name="release_date" value="2017"> 2017</label></li>
+            </ul>
+        </section>
+        <button type="submit">Filter</button>
+        <button type="reset">Clear</button>
+    </form>
+    <div class="box"></div>
+    <template id="cards">
+            {{#each this}}
+            {{#if this.fit}}
+        <div class="cart">
+            <img src="{{this.img}}" alt="" class="cart__img">
+            <ul class="card__atributes">
+                <li class="card__items">{{this.size}}</li>
+                <li class="card__items">{{this.color}}</li>
+                <li class="card__items">{{this.price}}</li>
+                <li class="card__items">{{this.release_date}}</li>
+                <li class="card__items">{{this.name}}</li>
+                <li class="card__items">{{this.descr}}</li>
+            </ul>
+        </div>
+        {{/if}}
+        {{/each}}
+    </template>
+
+    <div id="menu-container"></div>
+
+    <template id="menu-template">
+        <div class="menu">
+            <h3 class="menu-title">{{title}}</h3>
+            <ul class="menu-list">
+                {{#each this}}
+                <li class="menu-item">{{this.size}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </template>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
+
 </html>
