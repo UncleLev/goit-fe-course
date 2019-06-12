@@ -149,82 +149,64 @@ const laptops = [{
 ];
 
 const filter = {
-    size: [],
+    release_date: [],
     color: [],
-    release_date: []
+    size: [],
 }
 
 const sizeFilter = document.querySelector('#size');
 const colorFilter = document.querySelector('#color');
 const releaseFilter = document.querySelector('#release_date');
 const filterForm = document.querySelector('.js-form');
+const forms = [sizeFilter, colorFilter, releaseFilter];
+
+showCard();
 
 function filterShow() {
     event.preventDefault();
 
-    for (const key in filter) {
+    for (const key in filter) { //скидання фільтра 
         filter[key] = [];
     }
-    laptops.forEach(el =>el.fit = true);
+
+    forms.forEach(element => { //filter
+        element.childNodes.forEach((el, i) => {
+            if (i % 2 != 0 && i != 0) {
+                if (el.firstChild.firstChild.checked) {
+                    filter[el.firstChild.firstChild.getAttribute('name')].push(el.firstChild.firstChild.value);
+                }
+            }
+        });
+    });
+    laptops.forEach(el => el.fit = false); //скидання фільтра 
     
-
-    sizeFilter.childNodes.forEach((el, i) => {
-        if (i % 2 != 0 && i != 0) {
-            if (el.firstChild.firstChild.checked) {
-                filter.size.push(el.firstChild.firstChild.value)
-
+    laptops.forEach(el => { //перевірка фільтру
+        let check = true;
+        for (const key in el) {
+            if(filter[key] != undefined && filter[key].length != 0 && check){
+                if(filter[key].includes(el[key].toString())){
+                    check = true;
+                } else {
+                    check = false;
+                }
             }
         }
-    });
-    colorFilter.childNodes.forEach((el, i) => {
-        if (i % 2 != 0 && i != 0) {
-            if (el.firstChild.firstChild.checked) {
-                filter.color.push(el.firstChild.firstChild.value)
-
-
-            }
+        if(check){
+            el.fit = true;
         }
     });
-    releaseFilter.childNodes.forEach((el, i) => {
-        if (i % 2 != 0 && i != 0) {
-            if (el.firstChild.firstChild.checked) {
-                filter.release_date.push(el.firstChild.firstChild.value)
-            }
-        }
-    });
-    console.log(filter);
-    // laptops.forEach(el =>el.fit = false);
-    
-    for (const key in filter) {
-        if(filter[key].length != 0) {
 
-            // console.log(key, filter[key]);
+    showCard(); //вивід карточок
 
-            filter[key].forEach(el => {
-                console.log(el);
-                
-                laptops.forEach(el => {
-                    if (el[key] == filter[key]) {
-                        el.fit = true;
-                    } 
-                    else {
-                        el.fit = false;
-                    }
-                    // // console.log(el[key]);
-                    
-                });
-            });
-        }
-        
-    }
+}
 
+function showCard() {
     const source = document.querySelector('#cards').innerHTML.trim();
     const template = Handlebars.compile(source);
     const markup = template(laptops);
-    const container = document.querySelector('#menu-container');
+    const container = document.querySelector('#colaction');
     container.innerHTML = markup;
 }
 
 filterForm.addEventListener('reset', () => console.log(11111))
 filterForm.addEventListener('submit', filterShow)
-

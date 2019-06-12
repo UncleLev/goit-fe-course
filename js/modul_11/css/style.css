@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+.form {
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+.form h2{
+    margin-bottom: 10px;
+}
+.form section:not(:last-child) {
+    margin-bottom: 20px;
+}
+.form li:not(:last-child) {
+    margin-bottom: 5px;
+}
+.form label, input{
+    cursor: pointer;
+}
+
+
+.btn {
+    background-color: #2eb913;
+    min-width: 88px;
+    height: 36px;
+    padding: 0 16px;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.btn:hover {
+    background-color: #279212;
+}
+
+#colaction {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.cart {
+    width: 29.333%;
+    border-radius: 2px;
+    padding: 0 20px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    margin-bottom: 30px;
+
+}
+
+
+.cart__img {
+    width: 90%;
+    margin: 0 auto;
+}

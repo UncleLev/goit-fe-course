@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <aside>
     <form class="form js-form">
         <section>
             <h2>Screen size</h2>
@@ -35,9 +36,10 @@
                 <li><label><input type="checkbox" name="release_date" value="2017"> 2017</label></li>
             </ul>
         </section>
-        <button type="submit">Filter</button>
-        <button type="reset">Clear</button>
+        <button class="btn" type="submit">Filter</button>
+        <button class="btn" type="reset">Clear</button>
     </form>
+</aside>
     <div class="box"></div>
     <template id="cards">
             {{#each this}}
@@ -45,21 +47,21 @@
         <div class="cart">
             <img src="{{this.img}}" alt="" class="cart__img">
             <ul class="card__atributes">
-                <li class="card__items">{{this.size}}</li>
-                <li class="card__items">{{this.color}}</li>
-                <li class="card__items">{{this.price}}</li>
-                <li class="card__items">{{this.release_date}}</li>
-                <li class="card__items">{{this.name}}</li>
-                <li class="card__items">{{this.descr}}</li>
+                <li class="card__items">Size: {{this.size}}</li>
+                <li class="card__items">Color: {{this.color}}</li>
+                <li class="card__items">Price: {{this.price}}</li>
+                <li class="card__items">Release date: {{this.release_date}}</li>
+                <li class="card__items">Name: {{this.name}}</li>
+                <li class="card__items">Description: {{this.descr}}</li>
             </ul>
         </div>
         {{/if}}
         {{/each}}
     </template>
 
-    <div id="menu-container"></div>
+    <div id="colaction"></div>
 
-    <template id="menu-template">
+    <!-- <template id="menu-template">
         <div class="menu">
             <h3 class="menu-title">{{title}}</h3>
             <ul class="menu-list">
@@ -68,7 +70,7 @@
                 {{/each}}
             </ul>
         </div>
-    </template>
+    </template> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
     <script src="./js/index.js"></script>
