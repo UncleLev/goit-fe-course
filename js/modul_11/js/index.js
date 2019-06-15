@@ -160,14 +160,26 @@ const releaseFilter = document.querySelector('#release_date');
 const filterForm = document.querySelector('.js-form');
 const forms = [sizeFilter, colorFilter, releaseFilter];
 
-showCard();
 
-function filterShow() {
-    event.preventDefault();
+function showCard() {
+    const source = document.querySelector('#cards').innerHTML.trim();
+    const template = Handlebars.compile(source);
+    const markup = template(laptops);
+    const container = document.querySelector('#colaction');
+    container.innerHTML = markup;
+}
 
-    for (const key in filter) { //скидання фільтра 
+function cleaningFilter(fits) {
+    for (const key in filter) {
         filter[key] = [];
     }
+    laptops.forEach(el => el.fit = fits);
+}
+
+function Show() {
+    event.preventDefault();
+
+    cleaningFilter(false);
 
     forms.forEach(element => { //filter
         element.childNodes.forEach((el, i) => {
@@ -178,20 +190,15 @@ function filterShow() {
             }
         });
     });
-    laptops.forEach(el => el.fit = false); //скидання фільтра 
-    
+
     laptops.forEach(el => { //перевірка фільтру
         let check = true;
         for (const key in el) {
-            if(filter[key] != undefined && filter[key].length != 0 && check){
-                if(filter[key].includes(el[key].toString())){
-                    check = true;
-                } else {
-                    check = false;
-                }
+            if (filter[key] != undefined && filter[key].length != 0 && check) {
+                check = filter[key].includes(el[key].toString());
             }
         }
-        if(check){
+        if (check) {
             el.fit = true;
         }
     });
@@ -200,13 +207,12 @@ function filterShow() {
 
 }
 
-function showCard() {
-    const source = document.querySelector('#cards').innerHTML.trim();
-    const template = Handlebars.compile(source);
-    const markup = template(laptops);
-    const container = document.querySelector('#colaction');
-    container.innerHTML = markup;
+function Reserting() {
+    cleaningFilter(true);
+    showCard();
 }
 
-filterForm.addEventListener('reset', () => console.log(11111))
-filterForm.addEventListener('submit', filterShow)
+
+showCard();
+filterForm.addEventListener('reset', Reserting);
+filterForm.addEventListener('submit', Show);
