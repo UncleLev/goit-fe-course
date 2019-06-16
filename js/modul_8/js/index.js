@@ -129,6 +129,8 @@ const Allpreview = galleryItems.reduce((acc, el) => {
 
 preview.innerHTML = Allpreview;
 let item;
+
+
 const handleClick = event => {
     let source = galleryItems.find(el => el.fullview == event.target.getAttribute('data-fullview'));
     fullview.children[0].setAttribute('src', source.fullview);
