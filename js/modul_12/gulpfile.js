@@ -2,46 +2,36 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
 const gulpIf = require('gulp-if');
-const useref = require('gulp-useref');
+const babel = require("gulp-babel");
+const concat = require("gulp-concat");
+const clean = require('gulp-clean');
+
+const jsFile = [
+    'src/js/lib.js',
+    'src/js/index.js'
+];
 
 gulp.task('sass', function () {
-    return gulp.src('app/sass/**/*.scss')
+    return gulp.src('src/sass/**/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('app/css'))
+        .pipe(gulp.dest('build/css'))
 });
 
-gulp.task('watch', function () {
-    gulp.watch('app/sass/*.scss', ['sass']);
-    // Other watchers
-})
+gulp.task('clean', function () {
+    return gulp.src('build', {
+            read: false
+        })
+        .pipe(clean());
+});
 
 gulp.task('js', function () {
-    return gulp.src('app/js/*.js')
-        .pipe(gulpIf('*.js', uglify()))
-        .pipe(gulp.dest('dist/js'))
-});
+    return gulp.src(jsFile)
+        .pipe(concat('index.js'))
+        .pipe(babel())
+        .pipe(gulpIf('*.js', uglify({
+            toplevel: true
+        })))
+        .pipe(gulp.dest("build/js"))
+})
 
-gulp.task('useref', function () {
-    return gulp.src('app/*.html')
-        .pipe(useref())
-        // Minifies only if it's a JavaScript file
-        // .pipe(gulpIf('app/js/*.js', uglify()))
-        .pipe(gulp.dest('dist'))
-});
-// gulp.task('ggo', function () {
-//     return gulp.src('app/js/*.ts')
-//     .pipe(uglify())
-//     .pipe(gulp.dest('dist/js/main.ts'))
-// });
-
-// gulp.task('TS', function () {
-//     return gulp.src('app/js/**/*.ts')
-//     .pipe(())
-//     .pipe(gulp.dest('app/css'))
-// });
-gulp.task('build', function (callback) {
-    runSequence('clean:dist', 
-      ['sass', 'useref', 'images', 'fonts'],
-      callback
-    )
-  })
+gulp.task('build', gulp.series('clean', 'js', 'sass'));
