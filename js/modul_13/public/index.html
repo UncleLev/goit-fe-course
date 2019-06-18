@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modul_13</title>
+</head>
+
+<body>
+        
+    <form>
+        <input type="text" name="urlAddress" id="urlAddress" placeholder="Input you url">
+        <button class="btn btn--save btn-js">Save</button>
+    </form>
+
+    <div id="bookmark-list"></div>
+
+    <template id="bookmark">
+        {{#each this}}
+        <div class="bookmark" bookmarkId="{{this.id}}">
+            <img src="{{this.image}}" alt="" class="bookmark__img">
+            <h2 class="bookmark__title">{{this.title}}</h2>
+            <p class="bookmark__description">{{this.description}}</p>
+            <div class="bookmark__edit">
+                <button class="btn btn--delete" id="delete">Delete</button>
+                <a href="{{this.url}}" class="bookmark__link">To page</a>
+            </div>
+        </div>
+        {{/each}}
+    </template>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+</body>
+
+</html>
