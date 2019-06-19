@@ -7,7 +7,6 @@ import './scss/style.scss';
 const view = new View;
 const model = new Model;
 
-
 new Controler(model,view);
 
 view.showHandlebars('#bookmark', '#bookmark-list',model.bookmark);
