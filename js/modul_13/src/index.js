@@ -11,7 +11,6 @@ const model = new Model;
 new Controler(model,view);
 
 view.showHandlebars('#bookmark', '#bookmark-list',model.bookmark);
-console.log(view.btnDelete);
 
 
 

@@ -7,11 +7,7 @@ export default class Controler {
     }
     AddUrl(Url) {
         console.log(Url);
-        // if(this.model.isValidUrl(Url)){
         this.model.addItem(Url,this.view.showHandlebars);
-        // } else {
-
-        // }
     }
 
     RemoveUrl(id) {

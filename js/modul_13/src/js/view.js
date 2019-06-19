@@ -6,7 +6,6 @@ export default class View extends EventEmitter {
         this.form = document.querySelector('.form');
         this.btnSave = document.querySelector('.btn-js');
         this.input = document.querySelector('#urlAddress');
-        // this.bookmark = JSON.parse(localStorage.getItem('bookmark'));
         this.form.addEventListener('submit',this.UrlSaving.bind(this));
         this.btnDelete = document.querySelector('#bookmark-list');
         this.btnDelete.addEventListener('click',this.UrlDeleting.bind(this));
